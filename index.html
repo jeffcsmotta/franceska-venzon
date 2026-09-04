@@ -126,27 +126,27 @@
       <!-- Carrossel Horizontal Touch de Categorias -->
       <nav class="category-scroll-container" aria-label="Categorias do Cardápio">
         <div class="category-scroll-pills">
-          <button type="button" class="cat-pill active" data-category="todos" onclick="window.filterCategory('todos')">
-            <i data-lucide="cake" style="width:16px;height:16px;"></i>
+          <button type="button" class="cat-pill active" data-category="all" onclick="window.filterCategory('all', this)">
+            <i data-lucide="sparkles" style="width:16px;height:16px;"></i>
             <span>Todos os Itens</span>
           </button>
-          <button type="button" class="cat-pill" data-category="destaques" onclick="window.filterCategory('destaques')">
-            <i data-lucide="sparkles" style="width:16px;height:16px;"></i>
+          <button type="button" class="cat-pill" data-category="destaques" onclick="window.filterCategory('destaques', this)">
+            <i data-lucide="award" style="width:16px;height:16px;"></i>
             <span>Mais Vendidos ⭐</span>
           </button>
-          <button type="button" class="cat-pill" data-category="tortas" onclick="window.filterCategory('tortas')">
-            <i data-lucide="pie-chart" style="width:16px;height:16px;"></i>
-            <span>Bolos &amp; Tortas</span>
+          <button type="button" class="cat-pill" data-category="tortas" onclick="window.filterCategory('tortas', this)">
+            <i data-lucide="cake" style="width:16px;height:16px;"></i>
+            <span>Tortas &amp; Fatias</span>
           </button>
-          <button type="button" class="cat-pill" data-category="sobremesas" onclick="window.filterCategory('sobremesas')">
-            <i data-lucide="heart" style="width:16px;height:16px;"></i>
-            <span>Doces Autorais</span>
+          <button type="button" class="cat-pill" data-category="doces" onclick="window.filterCategory('doces', this)">
+            <i data-lucide="cookie" style="width:16px;height:16px;"></i>
+            <span>Doces &amp; Pâtisserie</span>
           </button>
-          <button type="button" class="cat-pill" data-category="salgados" onclick="window.filterCategory('salgados')">
+          <button type="button" class="cat-pill" data-category="salgados" onclick="window.filterCategory('salgados', this)">
             <i data-lucide="croissant" style="width:16px;height:16px;"></i>
-            <span>Salgados &amp; Forno</span>
+            <span>Quiches &amp; Salgados</span>
           </button>
-          <button type="button" class="cat-pill" data-category="cafes" onclick="window.filterCategory('cafes')">
+          <button type="button" class="cat-pill" data-category="cafes" onclick="window.filterCategory('cafes', this)">
             <i data-lucide="coffee" style="width:16px;height:16px;"></i>
             <span>Cafés Especiais</span>
           </button>
@@ -171,7 +171,7 @@
         </p>
       </div>
 
-      <!-- Grid de Produtos com Fotos Reais -->
+      <!-- Grid de Produtos com Curadoria Fotográfica de Alta Resolução -->
       <div class="catalog-grid" id="product-grid">
         <!-- Injetado dinamicamente via app.js -->
       </div>
@@ -195,44 +195,6 @@
       </div>
     </div>
   </main>
-
-  <!-- ==========================================================================
-       MOSAICO FOTOGRÁFICO DA CASA & VITRINE (ATMOSFERA REAL DO ESPAÇO)
-       ========================================================================== -->
-  <section class="mosaic-section">
-    <div class="container">
-      <div class="section-header-center">
-        <span class="section-tag">ATMOSFERA &amp; ESPAÇO FÍSICO</span>
-        <h2 class="section-title">Nossa Casa no Bairro Cruzeiro</h2>
-        <p class="section-subtitle">
-          Um refúgio acolhedor onde a técnica da alta confeitaria europeia encontra os cafés especiais selecionados na serra gaúcha.
-        </p>
-      </div>
-
-      <div class="mosaic-gallery-grid">
-        <div class="mosaic-item large">
-          <img src="assets/interior_confeitaria.jpg" alt="Balcão e vitrine Franceska Venzon Confeitaria" loading="lazy">
-          <div class="mosaic-caption">Vitrine &amp; Recepção</div>
-        </div>
-        <div class="mosaic-item">
-          <img src="assets/pratos_vitrine.jpg" alt="Fatias artesanais e bolos frescos" loading="lazy">
-          <div class="mosaic-caption">Fatias Frescas do Dia</div>
-        </div>
-        <div class="mosaic-item">
-          <img src="assets/interior_salao.jpg" alt="Salão acolhedor Franceska Venzon" loading="lazy">
-          <div class="mosaic-caption">Salão de Degustação</div>
-        </div>
-        <div class="mosaic-item">
-          <img src="assets/sobremesa_1.jpg" alt="Torta de Limão com Merengue Suíço Tostado" loading="lazy">
-          <div class="mosaic-caption">Torta de Limão Tostada</div>
-        </div>
-        <div class="mosaic-item">
-          <img src="assets/cafe_especial.jpg" alt="Extração de Café Especial" loading="lazy">
-          <div class="mosaic-caption">Cafés de Origem</div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ==========================================================================
        HISTÓRIA & CREDENCIAIS (LE CORDON BLEU & OTTOLENGHI)

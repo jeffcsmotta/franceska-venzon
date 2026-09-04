@@ -301,7 +301,9 @@ function renderCatalog() {
   let filtered = CATALOG_ITEMS;
 
   // Filtro de Categoria
-  if (activeCategory !== 'all') {
+  if (activeCategory === 'destaques') {
+    filtered = filtered.filter(item => item.destaque);
+  } else if (activeCategory !== 'all') {
     filtered = filtered.filter(item => item.category === activeCategory);
   }
 
@@ -324,6 +326,8 @@ function renderCatalog() {
       titleEl.textContent = `Busca: "${searchQuery}"`;
     } else if (activeCategory === 'all') {
       titleEl.textContent = 'Vitrine de Hoje';
+    } else if (activeCategory === 'destaques') {
+      titleEl.textContent = 'Mais Vendidos ⭐';
     } else if (activeCategory === 'tortas') {
       titleEl.textContent = 'Tortas & Fatias Frescas';
     } else if (activeCategory === 'doces') {
