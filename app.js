@@ -394,19 +394,23 @@ window.filterCategory = function(cat, btn) {
 
 // Busca
 window.handleSearch = function(val) {
-  searchQuery = val;
-  const clearBtn = document.getElementById('clear-search-btn');
+  if (typeof val === 'object' && val !== null) {
+    searchQuery = val.target ? val.target.value : '';
+  } else {
+    searchQuery = typeof val === 'string' ? val : '';
+  }
+  const clearBtn = document.getElementById('clear-search-btn') || document.getElementById('btn-clear-search');
   if (clearBtn) {
-    clearBtn.style.display = val.length > 0 ? 'flex' : 'none';
+    clearBtn.style.display = searchQuery.length > 0 ? 'flex' : 'none';
   }
   renderCatalog();
 };
 
 window.clearSearch = function() {
-  const input = document.getElementById('catalog-search-input');
+  const input = document.getElementById('catalog-search-input') || document.getElementById('search-input');
   if (input) input.value = '';
   searchQuery = '';
-  const clearBtn = document.getElementById('clear-search-btn');
+  const clearBtn = document.getElementById('clear-search-btn') || document.getElementById('btn-clear-search');
   if (clearBtn) clearBtn.style.display = 'none';
   renderCatalog();
 };
@@ -523,13 +527,31 @@ function updateCartUI() {
   const grandTotal = subtotal + deliveryFee;
 
   // Header Counters & Badges
-  const badgeCount = document.getElementById('cart-badge-count');
-  const headerTotal = document.getElementById('header-cart-total');
+  const badgeCount = document.getElementById('cart-badge-count') || document.getElementById('cart-count');
+  const headerTotal = document.getElementById('header-cart-total') || document.getElementById('cart-total-nav');
   const headerTrash = document.getElementById('btn-header-trash');
+  const headerCartBtn = document.getElementById('header-cart-btn') || document.getElementById('btn-cart-nav');
 
-  if (badgeCount) badgeCount.textContent = totalItems;
-  if (headerTotal) headerTotal.textContent = `R$ ${grandTotal.toFixed(2).replace('.', ',')}`;
-  if (headerTrash) headerTrash.style.display = totalItems > 0 ? 'inline-flex' : 'none';
+  if (badgeCount) {
+    badgeCount.textContent = totalItems;
+    badgeCount.style.display = totalItems > 0 ? 'inline-block' : 'none';
+  }
+  if (headerTotal) {
+    headerTotal.textContent = `R$ ${grandTotal.toFixed(2).replace('.', ',')}`;
+    headerTotal.style.display = totalItems > 0 ? 'inline-block' : 'none';
+  }
+  if (headerTrash) {
+    headerTrash.style.display = totalItems > 0 ? 'inline-flex' : 'none';
+  }
+  if (headerCartBtn) {
+    if (totalItems > 0) {
+      headerCartBtn.classList.remove('cart-empty');
+      headerCartBtn.classList.add('has-items');
+    } else {
+      headerCartBtn.classList.add('cart-empty');
+      headerCartBtn.classList.remove('has-items');
+    }
+  }
 
   // Mobile Floating Bar
   const floatingBar = document.getElementById('cart-floating-bar');

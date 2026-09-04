@@ -89,6 +89,19 @@ body {
   position: relative;
 }
 
+/* Accessibility Utility */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 /* Container */
 .container {
   width: 100%;
@@ -177,15 +190,15 @@ body {
   transition: var(--transition);
 }
 
-.header-inner {
+.header-inner, .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 74px;
-  gap: 16px;
+  gap: 20px;
 }
 
-.brand-link {
+.brand-link, .brand-wrapper {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -193,18 +206,20 @@ body {
 }
 
 .brand-logo-img {
-  height: 46px;
+  height: 44px;
   width: auto;
+  max-width: 210px;
   object-fit: contain;
 }
 
 .header-center-info {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  flex: 1;
 }
 
-.status-live-pill {
+.status-live-pill, .status-compact {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -218,7 +233,7 @@ body {
   white-space: nowrap;
 }
 
-.pulse-dot {
+.pulse-dot, .status-dot {
   width: 7px;
   height: 7px;
   background-color: var(--emerald);
@@ -227,14 +242,16 @@ body {
   animation: pulseAnim 1.8s infinite;
 }
 
-.header-actions {
+.header-actions, .nav-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
 /* Botão Limpar Carrinho no Topo */
-.btn-header-action {
+.btn-header-action, .btn-header-trash {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #EF4444;
@@ -248,7 +265,7 @@ body {
   transition: var(--transition);
 }
 
-.btn-header-action:hover {
+.btn-header-action:hover, .btn-header-trash:hover {
   background: rgba(239, 68, 68, 0.15);
   border-color: #EF4444;
   transform: scale(1.05);
@@ -278,7 +295,7 @@ body {
 }
 
 /* Botão Pedido no Cabeçalho */
-.header-cart-btn {
+.header-cart-btn, .btn-cart-trigger {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -296,7 +313,7 @@ body {
   white-space: nowrap;
 }
 
-.header-cart-btn:hover {
+.header-cart-btn:hover, .btn-cart-trigger:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
 }
@@ -307,7 +324,7 @@ body {
   align-items: center;
 }
 
-.cart-badge-counter {
+.cart-badge-counter, .cart-count-badge {
   position: absolute;
   top: -8px;
   right: -10px;
@@ -327,13 +344,22 @@ body {
 }
 
 /* Numeral do Carrinho no Topo em Verde Esmeralda (#10B981) */
-.cart-btn-total {
+.cart-btn-total, .cart-total-header {
   font-family: var(--font-mono);
   font-weight: 800;
   color: #064E3B !important;
   background: rgba(255, 255, 255, 0.4);
   padding: 2px 8px;
   border-radius: var(--radius-pill);
+}
+
+/* Cache-proofing legacy fallbacks — Ensures old HTML never renders blue links or unstyled hero */
+.nav-desktop,
+.hero-section,
+.hero-award-pill,
+.award-badge,
+.mosaic-section {
+  display: none !important;
 }
 
 /* ==========================================================================
@@ -1727,38 +1753,64 @@ body {
 }
 
 .onira-cta.scrolling {
-  opacity: 0.35;
+  opacity: 0.4;
 }
 
 .onira-cta:hover {
   opacity: 1 !important;
   transform: translateY(-2px);
   border-color: var(--primary-gold);
+  box-shadow: 0 14px 36px rgba(212, 175, 55, 0.25);
 }
 
-.onira-cta-avatar {
-  width: 38px;
-  height: 38px;
+.onira-cta-avatar,
+.onira-avatar {
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   border: 2px solid var(--primary-gold);
   object-fit: cover;
+  flex-shrink: 0;
 }
 
-.onira-cta-text {
+.onira-cta-text,
+.onira-text-col {
   display: flex;
   flex-direction: column;
+  line-height: 1.25;
 }
 
-.onira-cta-hook {
+.onira-cta-hook,
+.onira-hook {
   font-size: 0.72rem;
   color: #94A3B8;
   font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
-.onira-cta-call {
+.onira-cta-call,
+.onira-call {
   font-size: 0.82rem;
   font-weight: 700;
   color: #F8E7A2;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.onira-price-label {
+  font-size: 0.76rem;
+  color: #CBD5E1;
+}
+
+.onira-price-label strong {
+  color: #FFFFFF;
+}
+
+.onira-link-text {
+  color: var(--primary-gold);
+  font-weight: 800;
+  white-space: nowrap;
 }
 
 /* Retractable Permanent Tag Behavior */
@@ -1772,8 +1824,10 @@ body {
 }
 
 .onira-cta.collapsed .onira-cta-avatar,
-.onira-cta.collapsed .onira-cta-text {
-  display: none;
+.onira-cta.collapsed .onira-avatar,
+.onira-cta.collapsed .onira-cta-text,
+.onira-cta.collapsed .onira-text-col {
+  display: none !important;
 }
 
 .onira-cta.collapsed::after {
@@ -1907,21 +1961,21 @@ body {
   }
 }
 
+@media (max-width: 860px) {
+  .header-center-info {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .top-bar {
     display: none;
   }
   .nav-desktop {
-    display: none;
+    display: none !important;
   }
-  .header-inner {
-    height: 70px;
-  }
-  .hero-title {
-    font-size: 2.2rem;
-  }
-  .hero-lead {
-    font-size: 1rem;
+  .header-inner, .nav-container {
+    height: 68px;
   }
   .section-title {
     font-size: 2rem;
@@ -1943,21 +1997,30 @@ body {
   }
 }
 
+@media (max-width: 520px) {
+  .brand-logo-img {
+    height: 38px;
+    max-width: 155px;
+  }
+  .btn-buy-site .btn-buy-text {
+    display: none;
+  }
+  .btn-buy-site {
+    padding: 7px 10px;
+  }
+  .header-cart-btn, .btn-cart-trigger {
+    padding: 7px 12px;
+    font-size: 0.82rem;
+    gap: 8px;
+  }
+  .cart-btn-total, .cart-total-header {
+    font-size: 0.80rem;
+    padding: 1px 6px;
+  }
+}
+
 @media (max-width: 480px) {
-  .hero-section {
-    padding: 60px 0 70px;
-  }
-  .hero-title {
-    font-size: 1.85rem;
-  }
-  .hero-actions {
-    flex-direction: column;
-    width: 100%;
-  }
-  .hero-actions a, .hero-actions button {
-    width: 100%;
-    justify-content: center;
-  }
+  .catalog-grid,
   .product-grid {
     grid-template-columns: 1fr;
   }

@@ -62,11 +62,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+  <!-- Cache-Buster & Immediate Service Worker Unregister -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for (var reg of registrations) {
+          reg.unregister();
+        }
+      });
+    }
+    if ('caches' in window) {
+      caches.keys().then(function(names) {
+        for (var name of names) {
+          caches.delete(name);
+        }
+      });
+    }
+  </script>
+
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=20260904a">
+  <link rel="stylesheet" href="style.css?v=20260904_final">
 </head>
 <body>
 
@@ -74,36 +92,41 @@
        HEADER DESPOLUÍDO & FOCADO EM CONVERSÃO (SEM LINKS CORPORATIVOS)
        ========================================================================== -->
   <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="brand-wrapper" aria-label="Franceska Venzon Confeitaria Início">
-        <img src="assets/logo.svg" alt="Franceska Venzon Confeitaria" class="brand-logo-img">
-        <h1 class="sr-only">Franceska Venzon Confeitaria - Caxias do Sul</h1>
+    <h1 class="sr-only">Franceska Venzon Confeitaria - Caxias do Sul</h1>
+    <div class="container header-inner nav-container">
+      <a href="index.html" class="brand-link brand-wrapper" aria-label="Franceska Venzon Confeitaria Início">
+        <img src="assets/logo-white.svg" alt="Franceska Venzon Confeitaria" class="brand-logo-img">
       </a>
 
       <!-- Status do Estabelecimento & Ações Rápidas -->
-      <div class="nav-actions">
-        <div class="status-compact" id="header-status">
-          <span class="status-dot"></span>
+      <div class="header-center-info">
+        <div class="status-live-pill status-compact" id="header-status">
+          <span class="pulse-dot"></span>
           <span>Aberto Hoje • 14h às 19h</span>
         </div>
+      </div>
 
+      <!-- Ações do Cabeçalho -->
+      <div class="header-actions nav-actions">
         <!-- Botão Comercial Compre este Site / Proposta -->
         <a href="proposta.html" class="btn-buy-site" title="Compre este canal próprio para o seu negócio">
-          <i data-lucide="zap" style="width:14px;height:14px;color:#FEF08A;fill:#FEF08A;"></i>
+          <i data-lucide="briefcase" style="width:14px;height:14px;"></i>
           <span class="btn-buy-text">Compre este site</span>
         </a>
 
         <!-- Botão Limpar Pedido (visível quando há itens) -->
-        <button type="button" class="btn-header-trash" id="btn-header-trash" onclick="window.clearCart()" title="Limpar Pedido" aria-label="Limpar Pedido" style="display:none;">
+        <button type="button" class="btn-header-action btn-header-trash" id="btn-header-trash" onclick="window.clearCart()" title="Limpar Pedido" aria-label="Limpar Pedido" style="display:none;">
           <i data-lucide="trash-2" style="width:16px;height:16px;"></i>
         </button>
 
         <!-- Botão Carrinho ("Pedido") -->
-        <button type="button" class="btn-cart-trigger cart-empty" id="btn-cart-nav" onclick="window.openCart()" aria-label="Ver Carrinho de Pedidos">
-          <i data-lucide="shopping-bag" style="width:17px;height:17px;"></i>
+        <button type="button" class="header-cart-btn btn-cart-trigger cart-empty" id="header-cart-btn" onclick="window.openCart()" aria-label="Ver Carrinho de Pedidos">
+          <div class="cart-btn-icon-wrap">
+            <i data-lucide="shopping-bag" style="width:18px;height:18px;"></i>
+            <span class="cart-badge-counter cart-count-badge" id="cart-badge-count">0</span>
+          </div>
           <span class="cart-btn-label">Pedido</span>
-          <span class="cart-total-header" id="cart-total-nav" style="display:none;">R$ 0,00</span>
-          <span class="cart-count-badge" id="cart-count" style="display:none;">0</span>
+          <span class="cart-btn-total cart-total-header" id="header-cart-total">R$ 0,00</span>
         </button>
       </div>
     </div>
@@ -117,8 +140,8 @@
       <!-- Busca Integrada -->
       <div class="search-box-wrap">
         <i data-lucide="search" class="search-icon"></i>
-        <input type="text" id="search-input" class="search-input" placeholder="Buscar torta, fatia, sobremesa, café..." oninput="window.handleSearch(event)">
-        <button type="button" class="btn-clear-search" id="btn-clear-search" onclick="window.clearSearch()" style="display:none;" aria-label="Limpar busca">
+        <input type="text" id="catalog-search-input" class="search-input" placeholder="Buscar torta, fatia, sobremesa, café..." oninput="window.handleSearch(this.value)">
+        <button type="button" class="btn-clear-search clear-search-btn" id="clear-search-btn" onclick="window.clearSearch()" style="display:none;" aria-label="Limpar busca">
           <i data-lucide="x" style="width:16px;height:16px;"></i>
         </button>
       </div>
@@ -529,10 +552,10 @@
 
   <!-- Floating Proposal Widget (.onira-cta) -->
   <a href="proposta.html" class="onira-cta" id="onira-floating-cta" title="Ver proposta comercial elaborada para a Franceska Venzon Confeitaria">
-    <img src="assets/jeff-avatar.webp" alt="Jefferson Motta" class="onira-avatar">
-    <div class="onira-text-col">
-      <span class="onira-hook">Gostou deste canal próprio?</span>
-      <span class="onira-call">
+    <img src="assets/jeff-avatar.webp" alt="Jefferson Motta" class="onira-cta-avatar onira-avatar">
+    <div class="onira-cta-text onira-text-col">
+      <span class="onira-cta-hook onira-hook">Gostou deste canal próprio?</span>
+      <span class="onira-cta-call onira-call">
         <span class="onira-price-label">A partir de <strong>3x R$ 800</strong></span>
         <span class="onira-link-text">Ver Proposta &rarr;</span>
       </span>
@@ -540,11 +563,12 @@
   </a>
 
   <!-- Scripts -->
-  <script src="app.js?v=20260904a"></script>
+  <script src="app.js?v=20260904_final"></script>
   <script>
+    // Permanent unregister of any lingering Service Worker
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js').catch(() => {});
+      navigator.serviceWorker.getRegistrations().then(function(regs) {
+        for (var r of regs) r.unregister();
       });
     }
   </script>
