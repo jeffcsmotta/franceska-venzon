@@ -6,9 +6,8 @@
  * Powered by Onira Labs
  */
 
-// WhatsApp Oficial da Franceska Venzon Confeitaria (Verificado via Google Maps/Fasty)
+// WhatsApp Oficial da Franceska Venzon Confeitaria (Verificado via Google Maps / Fasty)
 const CLIENT_WHATSAPP = '5554999141812';
-const CHAVE_PIX_OFICIAL = '54999141812'; // Chave Pix Celular Oficial
 
 // Catálogo Oficial com Imagens Reais do Estabelecimento
 const CATALOG_ITEMS = [
@@ -16,8 +15,8 @@ const CATALOG_ITEMS = [
     id: "torta-limao",
     name: "Torta de Limão com Merengue Suíço Tostado",
     category: "tortas",
-    categoryLabel: "Bolos & Tortas",
-    desc: "Massa sablée amanteigada e crocante, curd sedoso de limão siciliano e merengue suíço finalizado no maçarico com raspas frescas. Equilíbrio cítrico perfeito.",
+    categoryLabel: "Tortas & Fatias",
+    desc: "Massa sablée amanteigada e crocante, curd sedoso de limão siciliano e merengue suíço finalizado no maçarico com raspas frescas.",
     price: 24.0,
     typePreco: "Fatia Generosa",
     img: "assets/sobremesa_1.jpg",
@@ -29,8 +28,8 @@ const CATALOG_ITEMS = [
     id: "rocambole-merengue",
     name: "Rocambole de Merengue com Frutas Vermelhas",
     category: "tortas",
-    categoryLabel: "Bolos & Tortas",
-    desc: "Massa de merengue fofa, leve e aerada, recheada com nata fresca batida e compota artesanal de morangos, amoras e framboesas colhidas na serra.",
+    categoryLabel: "Tortas & Fatias",
+    desc: "Massa de merengue fofa e aerada, recheada com nata fresca batida e compota artesanal de morangos, amoras e framboesas da serra.",
     price: 26.0,
     typePreco: "Fatia Generosa",
     img: "assets/sobremesa_2.jpg",
@@ -42,8 +41,8 @@ const CATALOG_ITEMS = [
     id: "cheesecake-basco",
     name: "San Sebastián Cheesecake (Cheesecake Basco)",
     category: "tortas",
-    categoryLabel: "Bolos & Tortas",
-    desc: "Clássico da confeitaria espanhola: centro extremamente aveludado e cremoso, com topo caramelizado e tostado ao forno em alta temperatura. Sem base de biscoito.",
+    categoryLabel: "Tortas & Fatias",
+    desc: "Clássico da confeitaria espanhola: centro extremamente aveludado e cremoso, topo tostado e caramelizado em alta temperatura.",
     price: 25.0,
     typePreco: "Fatia Generosa",
     img: "assets/sobremesa_5.jpg",
@@ -53,10 +52,10 @@ const CATALOG_ITEMS = [
   },
   {
     id: "bolo-sabores-do-sul",
-    name: "Bolo Sabores do Sul (Eleito Melhor Bolo de Caxias)",
+    name: "Bolo Sabores do Sul (Melhor Bolo de Caxias)",
     category: "tortas",
-    categoryLabel: "Bolos & Tortas",
-    desc: "Criação premiada no prêmio Sabores do Sul: massa úmida artesanal com toque de especiarias nobres, recheio sedoso e finalização contemporânea autoral.",
+    categoryLabel: "Tortas & Fatias",
+    desc: "Criação premiada pela Revista Sabores do Sul: massa úmida artesanal com toque de especiarias nobres e recheio autoral aveludado.",
     price: 28.0,
     typePreco: "Fatia Premiada",
     img: "assets/pratos_vitrine.jpg",
@@ -66,10 +65,10 @@ const CATALOG_ITEMS = [
   },
   {
     id: "brownie-belga",
-    name: "Brownie Fudgy de Chocolate Belga 70% com Flor de Sal",
-    category: "sobremesas",
-    categoryLabel: "Doces & Sobremesas",
-    desc: "Textura densa e chocolatuda feita com cacau nobre Callebaut 70%, casquinha finíssima e brilhante, finalizado com cristais de flor de sal marinho.",
+    name: "Brownie Fudgy de Chocolate Belga 70% e Flor de Sal",
+    category: "doces",
+    categoryLabel: "Doces & Pâtisserie",
+    desc: "Textura densa e chocolatuda feita com cacau nobre Callebaut 70%, casquinha finíssima brilhante e cristais de flor de sal marinho.",
     price: 18.0,
     typePreco: "Unidade Grande",
     img: "assets/bolo_chocolate.jpg",
@@ -80,8 +79,8 @@ const CATALOG_ITEMS = [
   {
     id: "ichigo-sando",
     name: "Ichigo Sando (Sanduíche Japonês de Morango)",
-    category: "sobremesas",
-    categoryLabel: "Doces & Sobremesas",
+    category: "doces",
+    categoryLabel: "Doces & Pâtisserie",
     desc: "Pão de leite japonês ultra macio (shokupan artesanal), recheado generosamente com chantilly de nata fresca e morangos selecionados inteiros.",
     price: 24.0,
     typePreco: "Unidade",
@@ -93,8 +92,8 @@ const CATALOG_ITEMS = [
   {
     id: "blondie-pistache",
     name: "Blondie de Pistache com Framboesas Frescas",
-    category: "sobremesas",
-    categoryLabel: "Doces & Sobremesas",
+    category: "doces",
+    categoryLabel: "Doces & Pâtisserie",
     desc: "Blondie amanteigado e denso feito com pasta pura de pistache da Sicília, pedaços crocantes de pistache tostado e framboesas vermelhas frescas.",
     price: 22.0,
     typePreco: "Unidade",
@@ -106,8 +105,8 @@ const CATALOG_ITEMS = [
   {
     id: "brigadeiro-erva-mate",
     name: "Brigadeiro Autoral de Erva-Mate Nobre (Dupla)",
-    category: "sobremesas",
-    categoryLabel: "Doces & Sobremesas",
+    category: "doces",
+    categoryLabel: "Doces & Pâtisserie",
     desc: "Aclamada assinatura da Franceska: infusão delicada de erva-mate gaúcha selecionada em chocolate branco nobre, resultando em notas florais e herbáceas únicas.",
     price: 15.0,
     typePreco: "Dupla (2 un)",
@@ -119,9 +118,9 @@ const CATALOG_ITEMS = [
   {
     id: "choux-cream",
     name: "Choux Cream com Craquelin e Baunilha de Madagascar",
-    category: "sobremesas",
-    categoryLabel: "Doces & Sobremesas",
-    desc: "Carolinas francesas com crostinha crocante de craquelin, recheadas na hora com creme pâtissière aromatizado com favas naturais de baunilha de Madagascar.",
+    category: "doces",
+    categoryLabel: "Doces & Pâtisserie",
+    desc: "Carolinas francesas com crostinha crocante de craquelin, recheadas com creme pâtissière aromatizado com favas naturais de baunilha de Madagascar.",
     price: 18.0,
     typePreco: "Unidade",
     img: "assets/sobremesa_6.jpg",
@@ -131,10 +130,10 @@ const CATALOG_ITEMS = [
   },
   {
     id: "empanada-organica",
-    name: "Empanada Artesanal de Farinha Orgânica (Carne na Ponta da Faca)",
+    name: "Empanada Artesanal de Farinha Orgânica (Carne)",
     category: "salgados",
-    categoryLabel: "Salgados & Forno",
-    desc: "Massa artesanal finíssima elaborada com farinha orgânica e manteiga colonial, recheio suculento de carne cortada na ponta da faca, cebola caramelizada e azeitonas.",
+    categoryLabel: "Quiches & Salgados",
+    desc: "Massa artesanal finíssima com farinha orgânica e manteiga colonial, carne cortada na ponta da faca, cebola caramelizada e azeitonas.",
     price: 18.0,
     typePreco: "Unidade Assada",
     img: "assets/salgado_empanada.jpg",
@@ -144,9 +143,9 @@ const CATALOG_ITEMS = [
   },
   {
     id: "empanada-cogumelos",
-    name: "Empanada Orgânica de Cogumelos Frescos & Queijo Serrano",
+    name: "Empanada Orgânica de Cogumelos Frescos & Queijo",
     category: "salgados",
-    categoryLabel: "Salgados & Forno",
+    categoryLabel: "Quiches & Salgados",
     desc: "Mix de cogumelos frescos salteados com ervas finas da serra e queijo artesanal curado, envolvidos em massa folhada leve de forno.",
     price: 19.0,
     typePreco: "Unidade Assada",
@@ -157,10 +156,10 @@ const CATALOG_ITEMS = [
   },
   {
     id: "muffin-milho-chipotle",
-    name: "Muffin de Milho Doce, Queijo Meia Cura & Toque de Chipotle",
+    name: "Muffin de Milho Doce, Meia Cura & Toque de Chipotle",
     category: "salgados",
-    categoryLabel: "Salgados & Forno",
-    desc: "Massa macia e aromática de milho doce fresco, cubos de queijo meia cura derretido e sutil defumado de pimenta chipotle. Receita de inspiração americana.",
+    categoryLabel: "Quiches & Salgados",
+    desc: "Massa macia e aromática de milho doce fresco, cubos de queijo meia cura derretido e sutil defumado de pimenta chipotle.",
     price: 16.0,
     typePreco: "Unidade",
     img: "assets/interior_salao.jpg",
@@ -170,10 +169,10 @@ const CATALOG_ITEMS = [
   },
   {
     id: "cumaru-latte",
-    name: "Cumaru Latte (Assinatura do Barista Alexandre Trindade)",
+    name: "Cumaru Latte (Assinatura do Barista Alexandre)",
     category: "cafes",
-    categoryLabel: "Cafés & Bebidas",
-    desc: "Espresso duplo extraído de grãos especiais da serra, leite integral vaporizado sedoso com infusão natural de semente de cumaru (a aromática baunilha da Amazônia).",
+    categoryLabel: "Cafés Especiais",
+    desc: "Espresso duplo extraído de microlote especial, leite vaporizado sedoso com infusão natural de semente de cumaru (baunilha da Amazônia).",
     price: 18.0,
     typePreco: "Xícara 240ml",
     img: "assets/cafe_especial.jpg",
@@ -185,7 +184,7 @@ const CATALOG_ITEMS = [
     id: "espresso-duplo",
     name: "Espresso Duplo Especial (Torra Clara Selecionada)",
     category: "cafes",
-    categoryLabel: "Cafés & Bebidas",
+    categoryLabel: "Cafés Especiais",
     desc: "Grãos arábica de microlote selecionado, notas florais e frutadas naturais, acidez málica equilibrada e crema aveludada.",
     price: 12.0,
     typePreco: "Dose Dupla",
@@ -198,8 +197,8 @@ const CATALOG_ITEMS = [
     id: "cappuccino-italiano",
     name: "Cappuccino Italiano Cremoso com Cacau 70%",
     category: "cafes",
-    categoryLabel: "Cafés & Bebidas",
-    desc: "Um terço de espresso especial, um terço de leite vaporizado e um terço de microespuma brilhante, polvilhado com cacau puro 70%.",
+    categoryLabel: "Cafés Especiais",
+    desc: "Espresso especial, leite vaporizado e microespuma brilhante aveludada, polvilhado com cacau puro Callebaut 70%.",
     price: 16.0,
     typePreco: "Xícara 200ml",
     img: "assets/cafe_especial.jpg",
@@ -209,10 +208,10 @@ const CATALOG_ITEMS = [
   },
   {
     id: "cold-brew",
-    name: "Cold Brew Infusionado 18 Horas (Café Gelado Especial)",
+    name: "Cold Brew Infusionado 18 Horas (Café Gelado)",
     category: "cafes",
-    categoryLabel: "Cafés & Bebidas",
-    desc: "Extração a frio de 18 horas de grãos com perfil frutado. Bebida refrescante, com doçura natural acentuada, baixíssima acidez e servido com gelo artesanal.",
+    categoryLabel: "Cafés Especiais",
+    desc: "Extração a frio de 18 horas de grãos com perfil frutado. Bebida refrescante, com doçura natural acentuada e servido com gelo artesanal.",
     price: 18.0,
     typePreco: "Copo 300ml",
     img: "assets/cafe_especial.jpg",
@@ -222,7 +221,7 @@ const CATALOG_ITEMS = [
   }
 ];
 
-// Zonas de Entrega
+// Zonas e Bairros de Caxias do Sul
 const DELIVERY_ZONES = [
   { neighborhood: "Cruzeiro / Bela Vista (Bairro da Loja)", fee: 8.0, time: "25-35 min" },
   { neighborhood: "Centro / Exposição", fee: 10.0, time: "30-40 min" },
@@ -239,77 +238,114 @@ const DELIVERY_ZONES = [
 
 // Estado da Aplicação
 let cart = [];
-let activeCategory = 'todos';
-let fulfillmentType = 'delivery'; // 'delivery' ou 'retirada'
-let selectedZone = DELIVERY_ZONES[0];
+let activeCategory = 'all';
+let searchQuery = '';
+let deliveryType = 'delivery'; // 'delivery' ou 'pickup'
 let paymentMethod = 'pix'; // 'pix', 'cartao', 'dinheiro'
-
-// Elementos DOM
-const productGridEl = document.getElementById('product-grid');
-const cartDrawerEl = document.getElementById('cart-drawer');
-const cartOverlayEl = document.getElementById('cart-overlay');
-const cartItemsContainerEl = document.getElementById('cart-items-container');
-const cartEmptyStateEl = document.getElementById('cart-empty-state');
-const cartCountBadgeEl = document.getElementById('cart-badge-count');
-const cartFloatingBarEl = document.getElementById('cart-floating-bar');
-const subtotalEl = document.getElementById('cart-subtotal-val');
-const deliveryFeeRowEl = document.getElementById('delivery-fee-row');
-const deliveryFeeValEl = document.getElementById('delivery-fee-val');
-const grandTotalEl = document.getElementById('cart-grand-total-val');
-const deliveryAddressGroupEl = document.getElementById('delivery-address-group');
-const deliveryZoneGroupEl = document.getElementById('delivery-zone-group');
-const neighborhoodSelectEl = document.getElementById('neighborhood-select');
-const customerNameInputEl = document.getElementById('customer-name');
-const customerAddressInputEl = document.getElementById('customer-address');
-const orderNotesInputEl = document.getElementById('order-notes');
+let selectedBairroIndex = 0;
 
 // Inicialização
 document.addEventListener('DOMContentLoaded', () => {
-  loadCartFromStorage();
-  populateNeighborhoods();
-  renderProducts();
+  loadCart();
+  populateBairros();
+  renderCatalog();
   updateCartUI();
-  setupEventListeners();
   initProposalScrollEffect();
   if (window.lucide) lucide.createIcons();
 });
 
-// Salvar / Carregar do LocalStorage
-function saveCartToStorage() {
-  localStorage.setItem('fv_cart_v1', JSON.stringify(cart));
-}
-
-function loadCartFromStorage() {
+// Storage
+function loadCart() {
   try {
-    const saved = localStorage.getItem('fv_cart_v1');
-    if (saved) cart = JSON.parse(saved);
+    const data = localStorage.getItem('fv_cart_v2');
+    if (data) cart = JSON.parse(data);
   } catch (e) {
     cart = [];
   }
 }
 
-// Preencher Bairros de Caxias do Sul
-function populateNeighborhoods() {
-  if (!neighborhoodSelectEl) return;
-  neighborhoodSelectEl.innerHTML = '';
+function saveCart() {
+  localStorage.setItem('fv_cart_v2', JSON.stringify(cart));
+}
+
+// Bairros
+function populateBairros() {
+  const select = document.getElementById('client-bairro');
+  if (!select) return;
+  select.innerHTML = '';
   DELIVERY_ZONES.forEach((zone, idx) => {
     const opt = document.createElement('option');
     opt.value = idx;
-    opt.textContent = `${zone.neighborhood} — R$ ${zone.fee.toFixed(2).replace('.', ',')} (${zone.time})`;
-    neighborhoodSelectEl.appendChild(opt);
+    opt.textContent = `${zone.neighborhood} (+ R$ ${zone.fee.toFixed(2).replace('.', ',')})`;
+    select.appendChild(opt);
   });
 }
 
-// Renderizar Produtos no Grid
-function renderProducts() {
-  if (!productGridEl) return;
-  productGridEl.innerHTML = '';
+window.updateBairroFee = function() {
+  const select = document.getElementById('client-bairro');
+  if (select) {
+    selectedBairroIndex = parseInt(select.value, 10) || 0;
+  }
+  updateCartUI();
+};
+
+// Renderização do Catálogo
+function renderCatalog() {
+  const grid = document.getElementById('product-grid');
+  const countBadge = document.getElementById('products-count-badge');
+  const titleEl = document.getElementById('current-category-name');
+  if (!grid) return;
+
+  grid.innerHTML = '';
 
   let filtered = CATALOG_ITEMS;
-  if (activeCategory === 'destaques') {
-    filtered = CATALOG_ITEMS.filter(item => item.destaque);
-  } else if (activeCategory !== 'todos') {
-    filtered = CATALOG_ITEMS.filter(item => item.category === activeCategory);
+
+  // Filtro de Categoria
+  if (activeCategory !== 'all') {
+    filtered = filtered.filter(item => item.category === activeCategory);
+  }
+
+  // Filtro de Busca
+  if (searchQuery.trim()) {
+    const q = searchQuery.toLowerCase().trim();
+    filtered = filtered.filter(item => 
+      item.name.toLowerCase().includes(q) || 
+      item.desc.toLowerCase().includes(q) ||
+      item.categoryLabel.toLowerCase().includes(q)
+    );
+  }
+
+  if (countBadge) {
+    countBadge.textContent = `${filtered.length} ${filtered.length === 1 ? 'opção artesanal' : 'opções artesanais'}`;
+  }
+
+  if (titleEl) {
+    if (searchQuery.trim()) {
+      titleEl.textContent = `Busca: "${searchQuery}"`;
+    } else if (activeCategory === 'all') {
+      titleEl.textContent = 'Vitrine de Hoje';
+    } else if (activeCategory === 'tortas') {
+      titleEl.textContent = 'Tortas & Fatias Frescas';
+    } else if (activeCategory === 'doces') {
+      titleEl.textContent = 'Doces Finos & Pâtisserie';
+    } else if (activeCategory === 'salgados') {
+      titleEl.textContent = 'Quiches, Empanadas & Salgados';
+    } else if (activeCategory === 'cafes') {
+      titleEl.textContent = 'Cafés Especiais & Bebidas';
+    }
+  }
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `
+      <div style="grid-column:1/-1;text-align:center;padding:50px 20px;color:#71717A;">
+        <i data-lucide="search-x" style="width:48px;height:48px;margin-bottom:12px;opacity:0.4;"></i>
+        <h4 style="color:#24140E;margin-bottom:6px;font-size:1.2rem;">Nenhum item encontrado</h4>
+        <p style="font-size:0.9rem;">Tente buscar por outro termo ou limpe o filtro.</p>
+        <button type="button" onclick="window.clearSearch()" style="margin-top:14px;background:#24140E;color:#FFF;border:none;padding:8px 18px;border-radius:9999px;font-weight:700;cursor:pointer;">Limpar busca</button>
+      </div>
+    `;
+    if (window.lucide) lucide.createIcons();
+    return;
   }
 
   filtered.forEach(item => {
@@ -332,19 +368,46 @@ function renderProducts() {
             <span class="price-portion-label">${item.typePreco}</span>
             <span class="price-value">R$ ${item.price.toFixed(2).replace('.', ',')}</span>
           </div>
-          <button class="add-cart-btn" onclick="addToCart('${item.id}')">
+          <button type="button" class="add-cart-btn" onclick="window.addToCart('${item.id}')">
             <i data-lucide="plus"></i> Pedir
           </button>
         </div>
       </div>
     `;
-    productGridEl.appendChild(card);
+    grid.appendChild(card);
   });
 
   if (window.lucide) lucide.createIcons();
 }
 
-// Adicionar Item ao Carrinho
+// Filtros de Categoria
+window.filterCategory = function(cat, btn) {
+  activeCategory = cat;
+  document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderCatalog();
+};
+
+// Busca
+window.handleSearch = function(val) {
+  searchQuery = val;
+  const clearBtn = document.getElementById('clear-search-btn');
+  if (clearBtn) {
+    clearBtn.style.display = val.length > 0 ? 'flex' : 'none';
+  }
+  renderCatalog();
+};
+
+window.clearSearch = function() {
+  const input = document.getElementById('catalog-search-input');
+  if (input) input.value = '';
+  searchQuery = '';
+  const clearBtn = document.getElementById('clear-search-btn');
+  if (clearBtn) clearBtn.style.display = 'none';
+  renderCatalog();
+};
+
+// Gerenciamento do Carrinho
 window.addToCart = function(productId) {
   const product = CATALOG_ITEMS.find(p => p.id === productId);
   if (!product) return;
@@ -363,12 +426,11 @@ window.addToCart = function(productId) {
     });
   }
 
-  saveCartToStorage();
+  saveCart();
   updateCartUI();
   showToast(`✓ ${product.name} adicionado ao pedido!`);
 };
 
-// Alterar Quantidade
 window.updateItemQty = function(productId, delta) {
   const item = cart.find(i => i.id === productId);
   if (!item) return;
@@ -378,91 +440,121 @@ window.updateItemQty = function(productId, delta) {
     cart = cart.filter(i => i.id !== productId);
   }
 
-  saveCartToStorage();
+  saveCart();
   updateCartUI();
 };
 
-// Remover Item
 window.removeItemFromCart = function(productId) {
   cart = cart.filter(i => i.id !== productId);
-  saveCartToStorage();
+  saveCart();
   updateCartUI();
 };
 
-// Limpar Carrinho
 window.clearCart = function() {
   cart = [];
-  saveCartToStorage();
+  saveCart();
   updateCartUI();
+  showToast('Pedido esvaziado.');
 };
 
-// Alternar Tipo de Entrega (Retirada vs Tele-entrega)
-window.setFulfillment = function(type) {
-  fulfillmentType = type;
+// Drawer Controls
+window.openCart = function() {
+  const drawer = document.getElementById('cart-drawer');
+  const overlay = document.getElementById('cart-overlay');
+  if (drawer && overlay) {
+    drawer.classList.add('open');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+};
+
+window.closeCart = function() {
+  const drawer = document.getElementById('cart-drawer');
+  const overlay = document.getElementById('cart-overlay');
+  if (drawer && overlay) {
+    drawer.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+};
+
+// Tipo de Pedido (Tele-entrega vs Retirada)
+window.setDeliveryType = function(type) {
+  deliveryType = type;
   document.getElementById('btn-delivery')?.classList.toggle('active', type === 'delivery');
-  document.getElementById('btn-pickup')?.classList.toggle('active', type === 'retirada');
+  document.getElementById('btn-pickup')?.classList.toggle('active', type === 'pickup');
 
-  if (deliveryAddressGroupEl) {
-    deliveryAddressGroupEl.style.display = type === 'delivery' ? 'flex' : 'none';
-  }
-  if (deliveryZoneGroupEl) {
-    deliveryZoneGroupEl.style.display = type === 'delivery' ? 'flex' : 'none';
-  }
-  if (deliveryFeeRowEl) {
-    deliveryFeeRowEl.style.display = type === 'delivery' ? 'flex' : 'none';
-  }
+  const addrForm = document.getElementById('delivery-address-form');
+  const feeRow = document.getElementById('cart-fee-row');
+  if (addrForm) addrForm.style.display = type === 'delivery' ? 'flex' : 'none';
+  if (feeRow) feeRow.style.display = type === 'delivery' ? 'flex' : 'none';
 
   updateCartUI();
 };
 
-// Alternar Método de Pagamento
-window.setPayment = function(method) {
+// Forma de Pagamento
+window.setPaymentMethod = function(method) {
   paymentMethod = method;
-  document.querySelectorAll('.pay-btn').forEach(btn => {
+  document.querySelectorAll('.pay-method-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.method === method);
   });
+
+  const trocoBox = document.getElementById('troco-input-box');
+  if (trocoBox) {
+    trocoBox.style.display = method === 'dinheiro' ? 'block' : 'none';
+  }
 };
 
-// Atualizar Interface do Carrinho
+// Atualização da UI do Carrinho
 function updateCartUI() {
   const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
   const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
   
   let deliveryFee = 0;
-  if (fulfillmentType === 'delivery' && neighborhoodSelectEl) {
-    const idx = parseInt(neighborhoodSelectEl.value, 10) || 0;
-    selectedZone = DELIVERY_ZONES[idx] || DELIVERY_ZONES[0];
-    deliveryFee = selectedZone.fee;
+  if (deliveryType === 'delivery') {
+    const zone = DELIVERY_ZONES[selectedBairroIndex] || DELIVERY_ZONES[0];
+    deliveryFee = zone.fee;
   }
 
   const grandTotal = subtotal + deliveryFee;
 
-  // Atualizar Contadores
-  if (cartCountBadgeEl) cartCountBadgeEl.textContent = totalItems;
-  
-  // Floating Mobile Bar
-  if (cartFloatingBarEl) {
-    const floatCount = document.getElementById('float-cart-count');
-    const floatTotal = document.getElementById('float-cart-total');
-    if (floatCount) floatCount.textContent = `${totalItems} ${totalItems === 1 ? 'item' : 'itens'}`;
-    if (floatTotal) floatTotal.textContent = `R$ ${grandTotal.toFixed(2).replace('.', ',')}`;
-    
+  // Header Counters & Badges
+  const badgeCount = document.getElementById('cart-badge-count');
+  const headerTotal = document.getElementById('header-cart-total');
+  const headerTrash = document.getElementById('btn-header-trash');
+
+  if (badgeCount) badgeCount.textContent = totalItems;
+  if (headerTotal) headerTotal.textContent = `R$ ${grandTotal.toFixed(2).replace('.', ',')}`;
+  if (headerTrash) headerTrash.style.display = totalItems > 0 ? 'inline-flex' : 'none';
+
+  // Mobile Floating Bar
+  const floatingBar = document.getElementById('cart-floating-bar');
+  const floatCount = document.getElementById('floating-cart-count');
+  const floatTotal = document.getElementById('floating-cart-total');
+
+  if (floatCount) floatCount.textContent = `${totalItems} ${totalItems === 1 ? 'item' : 'itens'}`;
+  if (floatTotal) floatTotal.textContent = `R$ ${grandTotal.toFixed(2).replace('.', ',')}`;
+  if (floatingBar) {
     if (totalItems > 0) {
-      cartFloatingBarEl.classList.add('active');
+      floatingBar.classList.add('active');
     } else {
-      cartFloatingBarEl.classList.remove('active');
+      floatingBar.classList.remove('active');
     }
   }
 
-  // Renderizar Lista do Drawer
-  if (cartItemsContainerEl && cartEmptyStateEl) {
+  // Lista de Itens no Drawer (FLUIDA, SEM SCROLL INTERNO)
+  const itemsList = document.getElementById('cart-items-list');
+  const emptyState = document.getElementById('cart-empty-state');
+
+  if (itemsList && emptyState) {
     if (cart.length === 0) {
-      cartItemsContainerEl.style.display = 'none';
-      cartEmptyStateEl.style.display = 'block';
+      itemsList.innerHTML = '';
+      itemsList.style.display = 'none';
+      emptyState.style.display = 'block';
     } else {
-      cartEmptyStateEl.style.display = 'none';
-      cartItemsContainerEl.style.display = 'flex';
-      cartItemsContainerEl.innerHTML = '';
+      emptyState.style.display = 'none';
+      itemsList.style.display = 'flex';
+      itemsList.innerHTML = '';
 
       cart.forEach(item => {
         const row = document.createElement('div');
@@ -474,144 +566,122 @@ function updateCartUI() {
             <span class="cart-item-price">R$ ${(item.price * item.qty).toFixed(2).replace('.', ',')}</span>
           </div>
           <div class="cart-qty-ctrl">
-            <button class="qty-btn" onclick="updateItemQty('${item.id}', -1)">-</button>
+            <button type="button" class="qty-btn" onclick="window.updateItemQty('${item.id}', -1)">-</button>
             <span class="qty-count">${item.qty}</span>
-            <button class="qty-btn" onclick="updateItemQty('${item.id}', 1)">+</button>
+            <button type="button" class="qty-btn" onclick="window.updateItemQty('${item.id}', 1)">+</button>
           </div>
-          <button class="cart-item-remove" onclick="removeItemFromCart('${item.id}')" title="Remover item">
+          <button type="button" class="cart-item-remove" onclick="window.removeItemFromCart('${item.id}')" title="Remover item">
             <i data-lucide="trash-2" style="width:16px;height:16px;"></i>
           </button>
         `;
-        cartItemsContainerEl.appendChild(row);
+        itemsList.appendChild(row);
       });
     }
   }
 
-  // Atualizar Totais
+  // Totais no Drawer
+  const subtotalEl = document.getElementById('cart-subtotal-val');
+  const feeEl = document.getElementById('cart-fee-val');
+  const totalEl = document.getElementById('cart-total-val');
+
   if (subtotalEl) subtotalEl.textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
-  if (deliveryFeeValEl) deliveryFeeValEl.textContent = `R$ ${deliveryFee.toFixed(2).replace('.', ',')}`;
-  if (grandTotalEl) grandTotalEl.textContent = `R$ ${grandTotal.toFixed(2).replace('.', ',')}`;
+  if (feeEl) feeEl.textContent = `R$ ${deliveryFee.toFixed(2).replace('.', ',')}`;
+  if (totalEl) totalEl.textContent = `R$ ${grandTotal.toFixed(2).replace('.', ',')}`;
 
   if (window.lucide) lucide.createIcons();
 }
 
-// Abrir e Fechar Gaveta do Carrinho
-window.openCartDrawer = function() {
-  if (cartDrawerEl && cartOverlayEl) {
-    cartDrawerEl.classList.add('open');
-    cartOverlayEl.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-};
-
-window.closeCartDrawer = function() {
-  if (cartDrawerEl && cartOverlayEl) {
-    cartDrawerEl.classList.remove('open');
-    cartOverlayEl.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-};
-
-// Disparador Oficial do WhatsApp (Comanda Operacional Limpa Onira.fly)
-window.checkoutWhatsApp = function() {
+// CHECKOUT WHATSAPP OFICIAL (REGRA ZERO ALERT — EXPERIÊNCIA FLUIDA E ELEGANTE)
+window.submitOrderToWhatsApp = function() {
   if (cart.length === 0) {
-    showToast('Adicione pelo menos um item ao pedido!');
+    showToast('Adicione pelo menos uma fatia ou café ao pedido!');
     return;
   }
 
-  const customerName = (customerNameInputEl?.value || '').trim();
-  const customerAddress = (customerAddressInputEl?.value || '').trim();
-  const orderNotes = (orderNotesInputEl?.value || '').trim();
-
-  if (!customerName) {
-    alert('Por favor, informe seu nome para identificação do pedido.');
-    customerNameInputEl?.focus();
-    return;
-  }
-
-  if (fulfillmentType === 'delivery' && !customerAddress) {
-    alert('Por favor, informe o endereço completo de entrega (rua, número e complemento).');
-    customerAddressInputEl?.focus();
-    return;
-  }
+  const clientName = (document.getElementById('client-name')?.value || '').trim();
+  const street = (document.getElementById('client-street')?.value || '').trim();
+  const number = (document.getElementById('client-number')?.value || '').trim();
+  const complement = (document.getElementById('client-complement')?.value || '').trim();
+  const obs = (document.getElementById('order-obs')?.value || '').trim();
+  const troco = (document.getElementById('troco-val')?.value || '').trim();
 
   const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
   let deliveryFee = 0;
-  let zoneText = '';
+  let zone = DELIVERY_ZONES[selectedBairroIndex] || DELIVERY_ZONES[0];
 
-  if (fulfillmentType === 'delivery') {
-    const idx = parseInt(neighborhoodSelectEl?.value, 10) || 0;
-    selectedZone = DELIVERY_ZONES[idx] || DELIVERY_ZONES[0];
-    deliveryFee = selectedZone.fee;
-    zoneText = selectedZone.neighborhood;
+  if (deliveryType === 'delivery') {
+    deliveryFee = zone.fee;
   }
 
   const grandTotal = subtotal + deliveryFee;
 
-  // Montagem da Comanda Limpa Onira.fly (Padrão Master)
+  // Montagem da Comanda Limpa Onira.fly
   let msg = `_pedido via site by Onira.fly_\n\n`;
 
-  if (fulfillmentType === 'delivery') {
+  if (deliveryType === 'delivery') {
     msg += `Solicitação de Tele-Entrega\n\n`;
   } else {
-    msg += `Solicitação de Retirada no balcão\n\n`;
+    msg += `Solicitação de Retirada no Balcão\n\n`;
   }
 
-  // Itens do Pedido
+  // Itens
   cart.forEach(item => {
     msg += `*${item.qty}x* ${item.name} · ${item.typePreco}\n`;
     msg += `*R$ ${(item.price * item.qty).toFixed(2).replace('.', ',')}*\n\n`;
   });
 
   // Observações
-  if (orderNotes) {
-    msg += `_Obs: ${orderNotes}_\n\n`;
+  if (obs) {
+    msg += `_Obs: ${obs}_\n\n`;
   }
 
-  // Totalizador Financeiro
+  // Totais
   msg += `*Itens: R$ ${subtotal.toFixed(2).replace('.', ',')}*\n`;
-  if (fulfillmentType === 'delivery') {
-    msg += `Entrega: R$ ${deliveryFee.toFixed(2).replace('.', ',')} (${zoneText})\n`;
+  if (deliveryType === 'delivery') {
+    msg += `Entrega: R$ ${deliveryFee.toFixed(2).replace('.', ',')} (${zone.neighborhood})\n`;
   }
   msg += `*Total: R$ ${grandTotal.toFixed(2).replace('.', ',')}*\n\n`;
 
-  // Identificação do Cliente
-  msg += `*${customerName}*\n`;
-  if (fulfillmentType === 'delivery') {
-    msg += `${customerAddress}\n`;
+  // Identificação do Cliente (Nome opcional com fallback elegante)
+  if (clientName) {
+    msg += `*${clientName}*\n`;
+  } else {
+    msg += `*Cliente WhatsApp*\n`;
   }
 
-  // Forma de Pagamento
+  // Endereço de Entrega (Fallback sem bloqueio para evitar abandono)
+  if (deliveryType === 'delivery') {
+    if (street) {
+      let fullAddress = `${street}${number ? ', ' + number : ''}`;
+      if (complement) fullAddress += ` (${complement})`;
+      fullAddress += ` — ${zone.neighborhood}, Caxias do Sul`;
+      msg += `${fullAddress}\n`;
+    } else {
+      msg += `Endereço: A combinar por aqui no WhatsApp (${zone.neighborhood})\n`;
+    }
+  }
+
+  // Pagamento
   if (paymentMethod === 'pix') {
     msg += `Pagamento em Pix — combinamos a chave por aqui\n\n`;
   } else if (paymentMethod === 'cartao') {
     msg += `Pagamento no cartão — favor levar a maquininha\n\n`;
   } else {
-    msg += `Pagamento em dinheiro — favor confirmar se precisa de troco\n\n`;
+    msg += `Pagamento em dinheiro`;
+    if (troco) {
+      msg += ` (troco para ${troco})\n\n`;
+    } else {
+      msg += ` — favor confirmar se precisa de troco\n\n`;
+    }
   }
 
   // Rodapé Oficial
   msg += `_Enviado pelo site da Franceska Venzon Confeitaria_`;
 
-  // URL WhatsApp
+  // Disparo sem bloqueio
   const whatsappUrl = `https://wa.me/${CLIENT_WHATSAPP}?text=${encodeURIComponent(msg)}`;
   window.open(whatsappUrl, '_blank');
 };
-
-// Efeito de Scroll no Widget da Proposta Onira (.onira-cta)
-function initProposalScrollEffect() {
-  const proposalWidget = document.getElementById('onira-cta');
-  if (!proposalWidget) return;
-
-  let scrollTimeout;
-  window.addEventListener('scroll', () => {
-    proposalWidget.classList.add('scrolling');
-    clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(() => {
-      proposalWidget.classList.remove('scrolling');
-    }, 450);
-  }, { passive: true });
-}
 
 // Toast Notifier
 function showToast(message) {
@@ -633,20 +703,17 @@ function showToast(message) {
   }, 3000);
 }
 
-// Filtros de Categoria
-function setupEventListeners() {
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      activeCategory = btn.dataset.category || 'todos';
-      renderProducts();
-    });
-  });
+// Floating CTA Scroll Retract
+function initProposalScrollEffect() {
+  const cta = document.getElementById('onira-floating-cta');
+  if (!cta) return;
 
-  if (neighborhoodSelectEl) {
-    neighborhoodSelectEl.addEventListener('change', () => {
-      updateCartUI();
-    });
-  }
+  let scrollTimeout;
+  window.addEventListener('scroll', () => {
+    cta.classList.add('scrolling');
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      cta.classList.remove('scrolling');
+    }, 450);
+  }, { passive: true });
 }
