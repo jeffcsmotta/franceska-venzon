@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial Onira.fly — Franceska Venzon Confeitaria</title>
+    <meta name="description" content="Diagnóstico estratégico, canal próprio e proposta comercial Onira.fly para a Franceska Venzon Confeitaria em Caxias do Sul.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#0A0A0A">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+    <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono, Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* ==========================================================================
+           ONIRA.FLY PROPOSAL DESIGN SYSTEM — HIGH-CONVERSION COMMERCIAL DECK
+           Cromática: Black Base (#0A0A0A), Surface (#141414), Amber Gold (#F59E0B),
+           Emerald (#10B981) e Executive Navy (#0F172A).
+           ========================================================================== */
+
+        :root {
+            --bg-base: #0A0A0A;
+            --bg-surface: #141414;
+            --bg-elevated: #1C1C1E;
+            --bg-card: #18181A;
+
+            --primary-amber: #F59E0B;
+            --primary-amber-hover: #D97706;
+            --accent-gold: #D4AF37;
+
+            --emerald: #10B981;
+            --emerald-glow: rgba(16, 185, 129, 0.2);
+            --emerald-border: rgba(16, 185, 129, 0.35);
+
+            --text-white: #FFFFFF;
+            --text-muted: #A1A1AA;
+            --text-dimmed: #71717A;
+
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --border-highlight: rgba(212, 175, 55, 0.4);
+
+            --font-heading: 'Plus Jakarta Sans', -apple-system, sans-serif;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+
+            --radius-sm: 10px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-pill: 9999px;
+
+            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background-color: var(--bg-base);
+            color: var(--text-white);
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-base);
+            color: var(--text-white);
+            line-height: 1.6;
+            position: relative;
+            padding-bottom: 90px;
+            overflow-x: hidden;
+        }
+
+        /* Ambient Glow Wrapper */
+        .ambient-glow-wrapper {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .ambient-glow {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(140px);
+            opacity: 0.15;
+        }
+
+        .glow-gold-top {
+            top: -120px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 750px;
+            height: 480px;
+            background: radial-gradient(circle, #D4AF37 0%, transparent 70%);
+        }
+
+        .glow-amber-center {
+            top: 50%;
+            right: -100px;
+            width: 550px;
+            height: 550px;
+            background: radial-gradient(circle, #F59E0B 0%, transparent 70%);
+            opacity: 0.12;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Navigation Header */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 900;
+            background: rgba(10, 10, 10, 0.90);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 14px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .brand-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .onirafly-logo {
+            height: 32px;
+            width: auto;
+        }
+
+        .badge-zero-fee {
+            background: rgba(16, 185, 129, 0.15);
+            color: #34D399;
+            border: 1px solid var(--emerald-border);
+            font-size: 0.72rem;
+            font-weight: 800;
+            font-family: var(--font-mono);
+            padding: 3px 10px;
+            border-radius: var(--radius-pill);
+        }
+
+        .btn-header-cta {
+            background: var(--primary-amber);
+            color: #0A0A0A !important;
+            font-size: 0.85rem;
+            font-weight: 800;
+            padding: 9px 20px;
+            border-radius: var(--radius-pill);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+            box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-header-cta:hover {
+            background: var(--primary-amber-hover);
+            transform: translateY(-1px);
+        }
+
+        /* Hero Section */
+        .proposal-hero {
+            padding: 85px 0 65px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .client-context-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(212, 175, 55, 0.12);
+            border: 1px solid var(--border-highlight);
+            color: #F3E5AB;
+            font-size: 0.82rem;
+            font-weight: 800;
+            padding: 6px 16px;
+            border-radius: var(--radius-pill);
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: 3.1rem;
+            line-height: 1.15;
+            font-weight: 900;
+            margin-bottom: 22px;
+            letter-spacing: -0.8px;
+        }
+
+        .hero-title .highlight {
+            background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #F59E0B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-lead {
+            font-size: 1.18rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin-bottom: 36px;
+        }
+
+        .hero-quick-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 40px;
+        }
+
+        .quick-stat-box {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 22px;
+            transition: var(--transition);
+        }
+
+        .quick-stat-box:hover {
+            border-color: var(--border-highlight);
+            transform: translateY(-3px);
+        }
+
+        .quick-stat-val {
+            font-family: var(--font-mono);
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #FFFFFF;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .quick-stat-label {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        /* Narrative Section */
+        .section-wrap {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+        }
+
+        .section-tag {
+            font-size: 0.78rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary-amber);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .section-heading {
+            font-family: var(--font-heading);
+            font-size: 2.3rem;
+            font-weight: 900;
+            line-height: 1.25;
+            color: #FFFFFF;
+            margin-bottom: 14px;
+        }
+
+        .section-desc {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+            max-width: 780px;
+        }
+
+        /* Comparison Table & Economics */
+        .econ-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            margin-top: 36px;
+        }
+
+        .econ-card {
+            background: var(--bg-surface);
+            border-radius: var(--radius-md);
+            padding: 32px;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .econ-card.highlight {
+            border: 2px solid var(--emerald-border);
+            background: linear-gradient(180deg, rgba(16, 185, 129, 0.08) 0%, rgba(20, 20, 20, 0.95) 100%);
+        }
+
+        .econ-card-title {
+            font-size: 1.15rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .econ-metric-huge {
+            font-family: var(--font-mono);
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin: 16px 0 8px;
+        }
+
+        .econ-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Scope & Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 36px;
+        }
+
+        .feature-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 28px;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary-amber);
+            transform: translateY(-3px);
+        }
+
+        .feature-icon-box {
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            background: rgba(245, 158, 11, 0.12);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-amber);
+            margin-bottom: 18px;
+        }
+
+        .feature-title {
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: #FFFFFF;
+        }
+
+        .feature-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Investment Cards (REGRA MANDATÓRIA: ZERO VERMELHO EM PREÇO, ZERO PERMUTA) */
+        .investment-container {
+            display: grid;
+            grid-template-columns: 1.3fr 0.9fr;
+            gap: 28px;
+            margin-top: 40px;
+        }
+
+        .price-card {
+            background: var(--bg-surface);
+            border: 2px solid var(--primary-amber);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .price-card-badge {
+            position: absolute;
+            top: -14px;
+            left: 36px;
+            background: var(--primary-amber);
+            color: #0A0A0A;
+            font-size: 0.76rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            padding: 4px 14px;
+            border-radius: var(--radius-pill);
+            text-transform: uppercase;
+        }
+
+        .price-card-header {
+            margin-bottom: 24px;
+        }
+
+        .price-card-title {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #FFFFFF;
+            margin-bottom: 6px;
+        }
+
+        .price-tag {
+            font-family: var(--font-mono);
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: var(--primary-amber);
+            margin: 16px 0 8px;
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        .price-tag span {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-family: var(--font-body);
+            font-weight: 600;
+        }
+
+        .price-subtitle {
+            font-size: 0.92rem;
+            color: var(--emerald);
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .price-deliverables {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 32px;
+        }
+
+        .price-deliverables li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.92rem;
+            color: #E4E4E7;
+            line-height: 1.5;
+        }
+
+        .price-deliverables li i {
+            color: var(--emerald);
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .upsell-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .upsell-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(168, 85, 247, 0.15);
+            color: #C084FC;
+            border: 1px solid rgba(168, 85, 247, 0.35);
+            font-size: 0.72rem;
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: var(--radius-pill);
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        /* Profile Card Jefferson Motta (.dev-profile-card) */
+        .dev-profile-card {
+            background: #0F172A;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 36px;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+            color: #FFFFFF;
+            margin-top: 48px;
+        }
+
+        .dev-profile-header {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            margin-bottom: 26px;
+            flex-wrap: wrap;
+        }
+
+        .dev-avatar-img {
+            width: 84px;
+            height: 84px;
+            border-radius: 14px;
+            border: 2px solid #059669;
+            box-shadow: 0 0 20px rgba(5, 150, 105, 0.35);
+            object-fit: cover;
+        }
+
+        .dev-meta-tag {
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #10B981;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .dev-name {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #FFFFFF;
+            margin-bottom: 4px;
+        }
+
+        .dev-role {
+            font-size: 0.9rem;
+            color: #E2E8F0;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .dev-location {
+            font-size: 0.8rem;
+            color: #94A3B8;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .dev-manifesto-quote {
+            background: rgba(255, 255, 255, 0.04);
+            border-left: 3px solid #059669;
+            border-radius: 0 8px 8px 0;
+            padding: 16px 20px;
+            font-style: italic;
+            font-size: 0.95rem;
+            color: #E2E8F0;
+            line-height: 1.65;
+            margin-bottom: 28px;
+        }
+
+        .dev-links-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-bottom: 32px;
+        }
+
+        .dev-link-pill {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: var(--radius-pill);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.86rem;
+            transition: var(--transition);
+        }
+
+        .dev-link-pill:hover {
+            background: rgba(255, 255, 255, 0.14);
+            border-color: var(--primary-amber);
+            transform: translateY(-2px);
+        }
+
+        .dev-signature-wrap {
+            padding-top: 26px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .dev-sig-brand img {
+            height: 42px;
+            max-width: 220px;
+            object-fit: contain;
+            margin-bottom: 6px;
+        }
+
+        .dev-sig-tagline {
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            color: #CBD5E1;
+        }
+
+        .dev-sig-city {
+            font-size: 0.75rem;
+            color: #64748B;
+        }
+
+        /* Floating WhatsApp Action Button */
+        .floating-whatsapp-btn {
+            position: fixed;
+            bottom: 26px;
+            right: 26px;
+            z-index: 9999;
+            background: #25D366;
+            color: #FFFFFF;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 24px;
+            border-radius: var(--radius-pill);
+            font-weight: 800;
+            font-size: 0.95rem;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+            transition: var(--transition);
+            animation: waPulse 2.5s infinite;
+        }
+
+        .floating-whatsapp-btn:hover {
+            background: #20BA56;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        @keyframes waPulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+            70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 860px) {
+            .hero-title { font-size: 2.4rem; }
+            .econ-grid, .investment-container { grid-template-columns: 1fr; }
+            .dev-links-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title { font-size: 1.95rem; }
+            .hero-lead { font-size: 1rem; }
+            .dev-profile-card { padding: 24px; }
+            .floating-whatsapp-btn { bottom: 20px; right: 20px; padding: 12px 18px; font-size: 0.88rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ambient Glow Effect -->
+    <div class="ambient-glow-wrapper">
+        <div class="ambient-glow glow-gold-top"></div>
+        <div class="ambient-glow glow-amber-center"></div>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-link">
+                <img src="assets/logo-white.svg" alt="Franceska Venzon" class="onirafly-logo">
+                <span class="badge-zero-fee">0% COMISSÃO</span>
+            </a>
+            <div style="display:flex;align-items:center;gap:12px;">
+                <a href="index.html" style="color:var(--text-muted);text-decoration:none;font-size:0.85rem;font-weight:600;">
+                    ← Ver Loja Ativa
+                </a>
+                <a href="https://wa.me/5554996862169?text=Ol%C3%A1%20Jefferson%21%20Analisei%20a%20proposta%20do%20canal%20pr%C3%B3prio%20para%20a%20Franceska%20Venzon%20Confeitaria%20e%20gostaria%20de%20alinhar%20os%20pr%C3%B3ximos%20passos." target="_blank" rel="noopener noreferrer" class="btn-header-cta">
+                    <i data-lucide="message-circle"></i> Falar com Jefferson
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Diagnóstico Estratégico -->
+    <section class="proposal-hero">
+        <div class="container">
+            <div class="client-context-pill">
+                <i data-lucide="sparkles" style="width:14px;height:14px;"></i>
+                DIAGNÓSTICO ESTRATÉGICO • FRANCESKA VENZON CONFEITARIA
+            </div>
+
+            <h1 class="hero-title">
+                Sua autoridade de confeitaria internacional com um <span class="highlight">canal digital à altura.</span>
+            </h1>
+
+            <p class="hero-lead">
+                A <strong>Franceska Venzon Confeitaria</strong> é uma das marcas mais refinadas de Caxias do Sul: formação <em>Le Cordon Bleu</em>, passagens por <em>The Hummingbird Bakery</em> e <em>Ottolenghi</em> em Londres, prêmio de <strong>Melhor Bolo de Caxias</strong> e uma legião de clientes fiéis no bairro Cruzeiro com nota <strong>4.9★ no Google</strong>.
+                <br><br>
+                Esta proposta apresenta como transformar esse prestígio em um <strong>canal digital próprio de alta conversão</strong>, sem fricção de aplicativos terceiros e com 100% da margem limpa no caixa da casa.
+            </p>
+
+            <div class="hero-quick-stats">
+                <div class="quick-stat-box">
+                    <div class="quick-stat-val">
+                        <i data-lucide="star" style="color:#D4AF37;width:24px;height:24px;"></i> 4.9 ★
+                    </div>
+                    <div class="quick-stat-label">Nota média no Google Maps com mais de 140 avaliações de clientes apaixonados.</div>
+                </div>
+
+                <div class="quick-stat-box">
+                    <div class="quick-stat-val" style="color:var(--emerald);">
+                        0% Taxas
+                    </div>
+                    <div class="quick-stat-label">Sem comissões de 23% para intermediários nas recompras dos seus clientes fiéis.</div>
+                </div>
+
+                <div class="quick-stat-box">
+                    <div class="quick-stat-val" style="color:var(--primary-amber);">
+                        &lt; 0.5s
+                    </div>
+                    <div class="quick-stat-label">Carregamento instantâneo no celular do cliente sem necessidade de download de app.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. O Tamanho da Oportunidade & Economia Real -->
+    <section class="section-wrap">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ANÁLISE FINANCEIRA &amp; RETENÇÃO</span>
+                <h2 class="section-heading">Marketplace para captação, canal próprio para lucro</h2>
+                <p class="section-desc">
+                    Marketplaces (como o iFood) cumprem um papel legítimo e importante de captação no topo de funil para quem ainda não conhece a confeitaria. Porém, cobrar de <strong>20% a 23% sobre a compra semanal de um cliente que já conhece e ama seus bolos</strong> corrói a lucratividade da operação.
+                </p>
+            </div>
+
+            <div class="econ-grid">
+                <div class="econ-card">
+                    <div class="econ-card-title">
+                        <i data-lucide="alert-triangle" style="color:#F59E0B;"></i>
+                        Dependência de Marketplaces (Cenário Atual)
+                    </div>
+                    <div class="econ-metric-huge" style="color:#F59E0B;">
+                        - R$ 1.610 /mês
+                    </div>
+                    <p class="econ-desc">
+                        Em uma média conservadora de 100 pedidos mensais com ticket médio de R$ 70,00 (fatias, sobremesas e cafés), a taxa de 23% drena <strong>R$ 1.610,00 por mês (R$ 19.320,00 por ano)</strong> do caixa da confeitaria.
+                    </p>
+                </div>
+
+                <div class="econ-card highlight">
+                    <div class="econ-card-title" style="color:var(--emerald);">
+                        <i data-lucide="shield-check" style="color:var(--emerald);"></i>
+                        Canal Próprio Onira.fly (Novo Cenário)
+                    </div>
+                    <div class="econ-metric-huge" style="color:var(--emerald);">
+                        + 100% Margem
+                    </div>
+                    <p class="econ-desc">
+                        O cliente acessa <strong>franceskavenzon.com.br</strong> direto pelo Instagram ou Google, escolhe as fatias em 2 toques e o pedido entra formatado e organizado no WhatsApp oficial, sem intermediários.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. O Que Está Entregue & Tecnologias Ativas -->
+    <section class="section-wrap">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ENTREGA COMPLETA &amp; IMEDIATA</span>
+                <h2 class="section-heading">Estrutura Pronta, Validada &amp; Operacional</h2>
+                <p class="section-desc">
+                    Não vendemos maquetes no Figma ou promessas para daqui a 60 dias. A primeira versão completa do canal próprio já está pronta e navegável, com as fotos reais dos seus produtos e vitrine.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-box"><i data-lucide="shopping-bag"></i></div>
+                    <h3 class="feature-title">Cardápio Interativo com Fotos Reais</h3>
+                    <p class="feature-desc">Vitrine categorizada com fatias, tortas, doces autorais, salgados e cafés com fotos reais de alta definição e badges de destaque.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-box"><i data-lucide="message-circle"></i></div>
+                    <h3 class="feature-title">Comanda Operacional no WhatsApp</h3>
+                    <p class="feature-desc">O pedido chega estruturado no WhatsApp oficial (54 99914-1812) com itens, valores, observações e taxa calculada pelo bairro de Caxias.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-box"><i data-lucide="globe"></i></div>
+                    <h3 class="feature-title">Domínio Oficial &amp; Nuvem Cloudflare</h3>
+                    <p class="feature-desc">Registro do domínio sob a titularidade da confeitaria com SSL automático, CDN brasileira de ultra baixa latência e 99.9% uptime.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-box"><i data-lucide="git-branch"></i></div>
+                    <h3 class="feature-title">Manutenção via Git em 5 Segundos</h3>
+                    <p class="feature-desc">Alterações de preços, novas fatias sazonais ou horários são atualizados instantaneamente em nuvem sem complicação de painéis lentos.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-box"><i data-lucide="smartphone"></i></div>
+                    <h3 class="feature-title">PWA &amp; 4 Breakpoints Responsivos</h3>
+                    <p class="feature-desc">Interface ergonômica que se adapta com perfeição a smartphones Android/iOS, tablets e desktops, com suporte a atalho na tela inicial.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-box"><i data-lucide="shield"></i></div>
+                    <h3 class="feature-title">Independência &amp; Propriedade</h3>
+                    <p class="feature-desc">O código e a base de clientes pertencem 100% a você. Sem mensalidades abusivas sobre seu faturamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Investimento & Condições Comerciais -->
+    <section class="section-wrap">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">INVESTIMENTO TRANSPARENTE</span>
+                <h2 class="section-heading">Condições Oficiais de Implementação</h2>
+                <p class="section-desc">
+                    Sem taxas ocultas, sem cobrança percentual sobre vendas e com garantia de suporte técnico contínuo.
+                </p>
+            </div>
+
+            <div class="investment-container">
+                <!-- Card Principal -->
+                <div class="price-card">
+                    <span class="price-card-badge">PROPOSTA OFICIAL ONIRA.FLY</span>
+                    <div class="price-card-header">
+                        <h3 class="price-card-title">Setup &amp; Implementação Completa</h3>
+                        <div class="price-tag">
+                            3x de R$ 800,00 <span>ou R$ 2.400,00 à vista</span>
+                        </div>
+                        <div class="price-subtitle">✓ Retorno do investimento estimado em menos de 60 dias de operação</div>
+                    </div>
+
+                    <ul class="price-deliverables">
+                        <li><i data-lucide="check-circle-2"></i> Cardápio digital autoral completo com vitrine de doces, salgados e cafés</li>
+                        <li><i data-lucide="check-circle-2"></i> Mecanismo de checkout direto para o WhatsApp oficial com comanda limpa</li>
+                        <li><i data-lucide="check-circle-2"></i> Cálculo automático de tele-entrega por bairros de Caxias do Sul e opção de retirada</li>
+                        <li><i data-lucide="check-circle-2"></i> Configuração de domínio próprio oficial (.com.br) registrado em nome da empresa</li>
+                        <li><i data-lucide="check-circle-2"></i> Otimização local SEO &amp; Schema.org para buscas no Google de Caxias do Sul</li>
+                        <li><i data-lucide="check-circle-2"></i> Widget inteligente retrátil e suporte para atualizações de vitrine</li>
+                    </ul>
+
+                    <a href="https://wa.me/5554996862169?text=Ol%C3%A1%20Jefferson%21%20Quero%20dar%20o%20ok%20para%20iniciar%20o%20canal%20pr%C3%B3prio%20da%20Franceska%20Venzon%20Confeitaria." target="_blank" rel="noopener noreferrer" class="btn-header-cta" style="width:100%;justify-content:center;padding:15px 20px;font-size:1rem;">
+                        <i data-lucide="check"></i> Aprovar Implementação do Canal Próprio
+                    </a>
+                </div>
+
+                <!-- Acompanhamento & Nuvem -->
+                <div class="upsell-card">
+                    <div>
+                        <span class="upsell-badge">OPERAÇÃO CONTÍNUA</span>
+                        <h3 style="font-size:1.3rem;font-weight:800;color:#FFFFFF;margin-bottom:8px;">Acompanhamento &amp; Nuvem</h3>
+                        <div style="font-family:var(--font-mono);font-size:2rem;font-weight:800;color:#FFFFFF;margin:12px 0 6px;">
+                            R$ 100,00 <span style="font-size:0.9rem;color:var(--text-muted);font-weight:600;">/mês</span>
+                        </div>
+                        <p style="font-size:0.86rem;color:var(--text-muted);line-height:1.6;margin-bottom:20px;">
+                            Inclui hospedagem em nuvem de alta velocidade na Cloudflare, renovação automática de certificado SSL, backup diário e suporte contínuo via Git para alterações de produtos, fotos e preços em minutos.
+                        </p>
+                    </div>
+
+                    <div style="padding-top:20px;border-top:1px solid var(--border-subtle);">
+                        <span style="display:inline-block;font-size:0.75rem;font-weight:800;color:#C084FC;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;">
+                            OPCIONAL DE CRESCIMENTO LOCAL
+                        </span>
+                        <h4 style="font-size:0.95rem;color:#FFFFFF;font-weight:700;margin-bottom:4px;">Acelerador Google Meu Negócio &amp; SEO</h4>
+                        <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.5;">
+                            Auditoria técnica, padronização de fotos, monitoramento de avaliações e otimização para dominar a busca de docerias e cafés em Caxias (+ R$ 100/mês nos primeiros 3 meses).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Perfil Executivo Jefferson Motta (.dev-profile-card) -->
+    <section class="section-wrap">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">QUEM ASSINA O PROJETO</span>
+                <h2 class="section-heading">Compromisso Direto com Quem Constrói</h2>
+            </div>
+
+            <div class="dev-profile-card">
+                <div class="dev-profile-header">
+                    <img src="assets/jeff-avatar.webp" alt="Jefferson Motta" class="dev-avatar-img">
+                    <div>
+                        <span class="dev-meta-tag">SERVICE DESIGN &amp; AI BUSINESS INTELLIGENCE</span>
+                        <h3 class="dev-name">Jefferson Motta</h3>
+                        <p class="dev-role">Service Designer e A.I Business Intelligence na Onira Labs</p>
+                        <span class="dev-location">
+                            <i data-lucide="map-pin" style="width:14px;height:14px;"></i> Caxias do Sul - Serra Gaúcha
+                        </span>
+                    </div>
+                </div>
+
+                <div class="dev-manifesto-quote">
+                    "Nosso propósito com o Onira.fly é devolver a autonomia para os negócios gastronômicos locais: o cliente visualiza o cardápio em menos de 1 segundo, monta o pedido em 2 toques e envia direto no WhatsApp oficial. Zero burocracia para quem compra e lucro total no caixa de quem produz."
+                </div>
+
+                <div class="dev-links-grid">
+                    <a href="https://www.linkedin.com/in/jeff-motta" target="_blank" rel="noopener noreferrer" class="dev-link-pill">
+                        <span style="display:flex;align-items:center;gap:8px;">
+                            <i data-lucide="linkedin" style="color:#38BDF8;width:18px;height:18px;"></i>
+                            LinkedIn: <strong>/in/jeff-motta</strong>
+                        </span>
+                        <i data-lucide="external-link" style="width:14px;height:14px;color:var(--text-muted);"></i>
+                    </a>
+
+                    <a href="https://jeffmotta.framer.website" target="_blank" rel="noopener noreferrer" class="dev-link-pill">
+                        <span style="display:flex;align-items:center;gap:8px;">
+                            <i data-lucide="globe" style="color:#F59E0B;width:18px;height:18px;"></i>
+                            Portfólio: <strong>jeffmotta.framer.website</strong>
+                        </span>
+                        <i data-lucide="external-link" style="width:14px;height:14px;color:var(--text-muted);"></i>
+                    </a>
+                </div>
+
+                <div class="dev-signature-wrap">
+                    <div class="dev-sig-brand">
+                        <img src="assets/logo_onira_branco.png" alt="Onira Labs">
+                        <div class="dev-sig-tagline">ONIRA.FLY • HIGH CONVERSION DIGITAL CHANNELS</div>
+                    </div>
+                    <div class="dev-sig-city">
+                        Caxias do Sul - Serra Gaúcha • Brasil
+                    </div>
+                </div>
+            </div>
+
+            <p style="text-align:center;color:var(--text-muted);font-size:0.85rem;margin-top:32px;">
+                Proposta comercial elaborada por <strong>Onira Labs</strong> • Soluções Web &amp; Inteligência de Negócios
+            </p>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/5554996862169?text=Ol%C3%A1%20Jefferson%21%20Gostaria%20de%20conversar%20sobre%20a%20proposta%20do%20canal%20pr%C3%B3prio%20para%20a%20Franceska%20Venzon%20Confeitaria." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Falar com o Jefferson pelo WhatsApp">
+        <i data-lucide="message-circle" style="width:20px;height:20px;"></i>
+        <span>Falar com o Jefferson</span>
+    </a>
+
+    <script>
+        if (window.lucide) lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "Franceska Venzon Confeitaria",
+  "short_name": "Franceska Venzon",
+  "description": "Confeitaria artesanal e cafés especiais no bairro Cruzeiro em Caxias do Sul. Peça pelo WhatsApp com tele-entrega e retirada.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FAF6F0",
+  "theme_color": "#2C1A14",
+  "icons": [
+    {
+      "src": "assets/logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

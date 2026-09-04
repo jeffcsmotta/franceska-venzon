@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Franceska Venzon Confeitaria | Confeitaria Artesanal &amp; Cafés Especiais em Caxias do Sul</title>
+  <meta name="description" content="🍰 Franceska Venzon Confeitaria — Alta Pâtisserie, doces autorais e cafés especiais em Caxias do Sul. Formação Le Cordon Bleu e experiência em Londres. Peça tortas, rocamboles, blondies e cafés no WhatsApp com entrega ou retirada no Cruzeiro!">
+  <meta name="keywords" content="Franceska Venzon, Franceska Venzon Confeitaria, Confeitaria Caxias do Sul, Bolo Sabores do Sul, Cafés Especiais Caxias, Confeitaria Bairro Cruzeiro, Torta de Limão Caxias, Doces Finos Caxias">
+  <meta name="theme-color" content="#140A06">
+
+  <!-- Open Graph / WhatsApp Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Franceska Venzon Confeitaria">
+  <meta property="og:title" content="Franceska Venzon Confeitaria | Pâtisserie &amp; Cafés Especiais">
+  <meta property="og:description" content="🍰 Tortas premiadas, doces autorais e cafés especiais em Caxias do Sul. Cardápio oficial com pedidos direto no WhatsApp!">
+  <meta property="og:image" content="assets/sobremesa_1.jpg">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Schema.org JSON-LD (SEO Local & Google Rich Snippets) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Franceska Venzon Confeitaria",
+    "image": "assets/sobremesa_1.jpg",
+    "telephone": "+5554999141812",
+    "priceRange": "$$",
+    "servesCuisine": ["Confeitaria Artesanal", "Pâtisserie Francesa", "Cafés Especiais", "Sobremesas Autorais", "Salgados de Forno"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua José Tovasi, 423",
+      "addressLocality": "Caxias do Sul",
+      "addressRegion": "RS",
+      "postalCode": "95070-560",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -29.1764,
+      "longitude": -51.1689
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "14:00",
+        "closes": "19:00"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Favicon & PWA Manifest -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Franceska Venzon">
+
+  <!-- Google Fonts: Playfair Display (Titling), Plus Jakarta Sans (UI & Body), JetBrains Mono (Numbers) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=20260903">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="status-badge-live">
+          <span class="pulse-dot"></span>
+          Vitrine Aberta • Quarta a Sábado das 14h às 19h
+        </span>
+        <span class="top-bar-location">📍 Rua José Tovasi, 423 • Bairro Cruzeiro • Caxias do Sul</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="https://wa.me/5554999141812" target="_blank" rel="noopener noreferrer" class="top-bar-link">
+          <i data-lucide="phone" style="width:14px;height:14px;color:#10B981;"></i>
+          <span>(54) 99914-1812</span>
+        </a>
+        <a href="https://www.instagram.com/franceskavenzon" target="_blank" rel="noopener noreferrer" class="top-bar-link">
+          <i data-lucide="instagram" style="width:14px;height:14px;color:#D4AF37;"></i>
+          <span>@franceskavenzon</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="Franceska Venzon Início">
+        <img src="assets/logo-white.svg" alt="Franceska Venzon Confeitaria" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop" aria-label="Navegação Principal">
+        <a href="#cardapio" class="nav-link">Cardápio &amp; Vitrine</a>
+        <a href="#historia" class="nav-link">A Chef &amp; Formação</a>
+        <a href="#diferenciais" class="nav-link">Nossos Pilares</a>
+        <a href="#depoimentos" class="nav-link">Avaliações (4.9★)</a>
+        <a href="#localizacao" class="nav-link">Como Chegar</a>
+        <a href="proposta.html" class="nav-link proposal-pill">
+          <i data-lucide="briefcase" style="width:14px;height:14px;"></i> Proposta Onira.fly
+        </a>
+      </nav>
+
+      <!-- Header Actions: Cart Button -->
+      <div class="header-actions">
+        <button class="cart-trigger-btn" onclick="openCartDrawer()" aria-label="Abrir Pedido">
+          <i data-lucide="shopping-bag" style="width:18px;height:18px;"></i>
+          <span>Meu Pedido</span>
+          <span class="cart-badge-pill" id="cart-badge-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION (DARK & RICH) -->
+  <section class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-content">
+      <div class="award-badge">
+        <i data-lucide="award" style="width:16px;height:16px;"></i>
+        <span>VENCEDORA SABORES DO SUL • MELHOR BOLO DE CAXIAS DO SUL</span>
+      </div>
+      
+      <h1 class="hero-title">
+        Alta Pâtisserie, Criações Autorais &amp; <span class="gold-highlight">Cafés Especiais.</span>
+      </h1>
+      
+      <p class="hero-lead">
+        A técnica refinada da confeitaria clássica (Le Cordon Bleu) e a vivência em Londres (The Hummingbird Bakery &amp; Ottolenghi) no coração do bairro Cruzeiro. Fatias frescas, doces finos e grãos especiais com tele-entrega ou retirada no balcão.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#cardapio" class="btn-primary">
+          <i data-lucide="utensils"></i> Explorar Cardápio Oficial
+        </a>
+        <a href="https://wa.me/5554999141812?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20as%20fatias%20e%20doces%20dispon%C3%ADveis%20na%20vitrine%20hoje." target="_blank" rel="noopener noreferrer" class="btn-secondary">
+          <i data-lucide="message-circle" style="color:#25D366;"></i> WhatsApp Direto da Casa
+        </a>
+      </div>
+
+      <!-- Trust Badges Strip -->
+      <div class="hero-stats-row">
+        <div class="stat-item">
+          <div class="stat-icon"><i data-lucide="star"></i></div>
+          <div class="stat-text">
+            <strong>4.9 ★ no Google</strong>
+            <span>Mais de 140 avaliações</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i data-lucide="sparkles"></i></div>
+          <div class="stat-text">
+            <strong>Le Cordon Bleu</strong>
+            <span>Padrão técnico internacional</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i data-lucide="coffee"></i></div>
+          <div class="stat-text">
+            <strong>Cafés Especiais</strong>
+            <span>Barista Alexandre Trindade</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. CATALOG / CARDÁPIO SECTION (LIGHT #FAF6F0) -->
+  <section class="catalog-section" id="cardapio">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">PRODUÇÃO DIÁRIA &amp; INGREDIENTES NOBRES</span>
+        <h2 class="section-title">Nossa Vitrine de Hoje</h2>
+        <p class="section-subtitle">
+          Fatias generosas, sobremesas autorais e bebidas especiais preparadas artesanalmente sem atalhos industriais. Selecione seus itens e envie o pedido em 2 toques no WhatsApp oficial.
+        </p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="category-filter-wrap">
+        <button class="filter-btn active" data-category="todos">
+          <i data-lucide="grid"></i> Todos os Itens
+        </button>
+        <button class="filter-btn" data-category="destaques">
+          ⭐ Mais Pedidos
+        </button>
+        <button class="filter-btn" data-category="tortas">
+          🍰 Bolos &amp; Tortas
+        </button>
+        <button class="filter-btn" data-category="sobremesas">
+          🍓 Doces Autorais
+        </button>
+        <button class="filter-btn" data-category="salgados">
+          🥟 Salgados &amp; Forno
+        </button>
+        <button class="filter-btn" data-category="cafes">
+          ☕ Cafés Especiais
+        </button>
+      </div>
+
+      <!-- Dynamic Product Grid -->
+      <div class="product-grid" id="product-grid">
+        <!-- Renderizado dinamicamente via app.js com imagens reais -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. UPSELL BANNER (DARK GRADIENT) -->
+  <section class="upsell-banner-section">
+    <div class="container">
+      <div class="upsell-box">
+        <div class="upsell-info">
+          <span class="upsell-tag">
+            <i data-lucide="flame" style="width:14px;height:14px;"></i> Combinação Autoral Perfeita
+          </span>
+          <h3 class="upsell-title">Harmonize sua fatia com o exclusivo Cumaru Latte</h3>
+          <p class="upsell-desc">
+            Espresso duplo de microlote serrano, leite texturizado com infusão natural da semente de cumaru (a perfumada baunilha da Amazônia). O par consagrado pelos nossos clientes.
+          </p>
+        </div>
+        <div class="upsell-action">
+          <span class="upsell-price">R$ 18,00</span>
+          <button class="btn-upsell-add" onclick="addToCart('cumaru-latte')">
+            <i data-lucide="plus"></i> Adicionar ao Pedido
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ABOUT & STORY SECTION (DARK #24140E) -->
+  <section class="about-section" id="historia">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-col">
+          <span class="section-tag">DA EUROPA À SERRA GAÚCHA</span>
+          <h2 class="section-title">A Arte da Confeitaria Autoral Sem Concessões</h2>
+          <p class="about-p">
+            A <strong>Franceska Venzon Confeitaria</strong> nasceu da paixão compartilhada entre a chef pâtissière Franceska Venzon e seu marido, o barista Alexandre Trindade. Após formação no prestigiado <strong>Le Cordon Bleu</strong> e passagens por referências mundiais em Londres — como a icônica <em>The Hummingbird Bakery</em> e o prestigiado restaurante de <em>Yotam Ottolenghi</em> —, o casal retornou a Caxias do Sul para fundar um refúgio de alta gastronomia.
+          </p>
+          <p class="about-p">
+            No bairro Cruzeiro, o foco é a precisão: compotas preparadas com frutas frescas da serra, nata fresca batida diariamente, chocolate nobre Callebaut 70%, farinhas orgânicas e infusões botânicas autorais, como o lendário <strong>Brigadeiro de Erva-Mate</strong>.
+          </p>
+
+          <div class="credentials-list">
+            <div class="cred-card">
+              <div class="cred-icon"><i data-lucide="graduation-cap"></i></div>
+              <div class="cred-info">
+                <strong>Le Cordon Bleu</strong>
+                <span>Formação clássica francesa com rigor de alta pâtisserie.</span>
+              </div>
+            </div>
+            <div class="cred-card">
+              <div class="cred-icon"><i data-lucide="compass"></i></div>
+              <div class="cred-info">
+                <strong>Londres &amp; Ottolenghi</strong>
+                <span>Vivência nas padarias e feiras mais vibrantes do Reino Unido.</span>
+              </div>
+            </div>
+            <div class="cred-card">
+              <div class="cred-icon"><i data-lucide="award"></i></div>
+              <div class="cred-info">
+                <strong>Melhor Bolo de Caxias</strong>
+                <span>Prêmio Revista Sabores do Sul consagrando a assinatura autoral.</span>
+              </div>
+            </div>
+            <div class="cred-card">
+              <div class="cred-icon"><i data-lucide="coffee"></i></div>
+              <div class="cred-info">
+                <strong>Barista Alexandre Trindade</strong>
+                <span>Microlotes especiais torrados e extraídos com maestria.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-media-col">
+          <img src="assets/pratos_vitrine.jpg" alt="Vitrine de doces Franceska Venzon" class="about-img-main" loading="lazy">
+          <div class="about-floating-badge">
+            <strong>4.9 Estrelas</strong>
+            <span>Reconhecida publicamente por mais de 140 clientes como uma experiência gastronômica inesquecível.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. DIFFERENTIALS (LIGHT #FAF6F0) -->
+  <section class="differentials-section" id="diferenciais">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">POR QUE NOSSOS CLIENTES AMAM</span>
+        <h2 class="section-title">O Que Torna Nossa Confeitaria Única</h2>
+        <p class="section-subtitle">
+          Cada produto que sai do nosso forno carrega ingredientes nobres selecionados e respeito absoluto ao tempo de preparo.
+        </p>
+      </div>
+
+      <div class="diff-grid">
+        <div class="diff-card">
+          <div class="diff-icon-box"><i data-lucide="check-circle-2"></i></div>
+          <h3 class="diff-title">Pâtisserie de Excelência</h3>
+          <p class="diff-desc">Zero misturas prontas ou conservantes industriais. Nossas massas, curds, cremes e recheios são produzidos 100% do zero no dia.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-icon-box"><i data-lucide="coffee"></i></div>
+          <h3 class="diff-title">Grãos Especiais Selecionados</h3>
+          <p class="diff-desc">Cafés de microlotes premiados moídos na hora por barista experiente, com métodos que valorizam notas sensoriais puras e equilibradas.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-icon-box"><i data-lucide="wheat"></i></div>
+          <h3 class="diff-title">Farinhas Orgânicas &amp; Nata Fresca</h3>
+          <p class="diff-desc">Salgados e empanadas feitos com farinha orgânica de moinho selecionado e doces montados com nata fresca da serra e manteiga nobre.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-icon-box"><i data-lucide="truck"></i></div>
+          <h3 class="diff-title">Tele-Entrega Cuidadosa em Caxias</h3>
+          <p class="diff-desc">Embalagens protetoras e estruturadas desenvolvidas para garantir que fatias, rocamboles e tortas cheguem intactos na sua mesa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CUSTOMER REVIEWS (DARK #24140E) -->
+  <section class="reviews-section" id="depoimentos">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag" style="color:#D4AF37;">PROVA SOCIAL CONSOLIDADA</span>
+        <h2 class="section-title" style="color:#FFFFFF;">O Que Dizem Quem Já Provou</h2>
+        <p class="section-subtitle" style="color:#BFAEA4;">
+          Avaliações públicas reais registradas por clientes no Google Maps de Caxias do Sul.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i data-lucide="star" fill="#D4AF37"></i>
+            <i data-lucide="star" fill="#D4AF37"></i>
+            <i data-lucide="star" fill="#D4AF37"></i>
+            <i data-lucide="star" fill="#D4AF37"></i>
+            <i data-lucide="star" fill="#D4AF37"></i>
+          </div>
+          <p class="review-quote">
+            "Simplesmente a melhor confeitaria de Caxias! O rocambole de merengue com frutas vermelhas é algo de outro mundo, levíssimo e nada enjoativo. O atendimento é acolhedor e os cafés especiais do Alexandre completam a experiência."
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">PL</div>
+            <div class="reviewer-info">
+              <strong>Pâmela Lima</strong>
+              <span>Avaliação verificada no Google • 5.0★</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i data-lucide="star" fill="#D4AF37"></i>
+            <i data-lucide="star" fill="#D4AF37"></i>
+            <i data-lucide="star" fill="#D4AF37"></i>
+            <i data-lucide="star" fill="#D4AF37"></i>
+            <i data-lucide="star" fill="#D4AF37"></i>
+          </div>
+          <p class="review-quote">
+            "Experiência de alta confeitaria internacional em pleno bairro Cruzeiro. A formação da Franceska no Le Cordon Bleu e na Hummingbird Bakery se nota em cada detalhe. A torta de limão e o Cumaru Latte são paradas obrigatórias!"
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">RB</div>
+            <div class="reviewer-info">
+              <strong>Rodrigo Bettiol Ribeiro</strong>
+              <span>Avaliação verificada no Google • 5.0★</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i data-lucide="star" fill="#D4AF37"></i>
+            <i data-lucide="star" fill="#D4AF37"></i>
+            <i data-lucide="star" fill="#D4AF37"></i>
+            <i data-lucide="star" fill="#D4AF37"></i>
+            <i data-lucide="star" fill="#D4AF37"></i>
+          </div>
+          <p class="review-quote">
+            "O brigadeiro de erva-mate é uma das criações gastronômicas mais incríveis do Rio Grande do Sul. Dá para sentir a paixão e a técnica artesanal em tudo o que é feito na casa. Ambiente impecável!"
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">FS</div>
+            <div class="reviewer-info">
+              <strong>Felina Selvagem</strong>
+              <span>Avaliação verificada no Google • 5.0★</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. LOCATION & HOURS (LIGHT #FAF6F0) -->
+  <section class="location-section" id="localizacao">
+    <div class="container">
+      <div class="location-grid">
+        <div class="location-info-card">
+          <span class="section-tag">VENHA NOS VISITAR</span>
+          <h2 class="section-title" style="font-size: 2.1rem; margin-bottom: 20px;">Onde Fica Nosso Refúgio</h2>
+
+          <div class="info-row">
+            <div class="info-icon"><i data-lucide="map-pin"></i></div>
+            <div class="info-text">
+              <strong>Endereço Oficial</strong>
+              <p>Rua José Tovasi, 423 (esquina com Dom José Barea)<br>Bairro Cruzeiro, Caxias do Sul - RS<br>CEP 95070-560</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="info-icon"><i data-lucide="clock"></i></div>
+            <div class="info-text">
+              <strong>Horário de Atendimento</strong>
+              <p>Quarta a Sábado: das 14h às 19h<br>Domingos, Segundas e Terças: Produção &amp; Encomendas</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="info-icon"><i data-lucide="phone"></i></div>
+            <div class="info-text">
+              <strong>Contato &amp; Encomendas Especiais</strong>
+              <p>WhatsApp: (54) 99914-1812<br>E-mail: franceska.venzon@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="location-nav-btns">
+            <a href="https://maps.google.com/?q=Franceska+Venzon+Confeitaria+Caxias+do+Sul" target="_blank" rel="noopener noreferrer" class="btn-nav-action">
+              <i data-lucide="navigation"></i> Abrir no Google Maps
+            </a>
+            <a href="https://waze.com/ul?q=Rua+Jose+Tovasi+423+Caxias+do+Sul" target="_blank" rel="noopener noreferrer" class="btn-nav-action">
+              <i data-lucide="map"></i> Abrir no Waze
+            </a>
+          </div>
+        </div>
+
+        <div class="map-embed-wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.9213190829877!2d-51.17109282367855!3d-29.17641217537151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea367e91129f1%3A0xe54e565ad0cbe113!2sFranceska%20Venzon%20Confeitaria!5e0!3m2!1spt-BR!2sbr!4v1709500000000!5m2!1spt-BR!2sbr" 
+            title="Localização Franceska Venzon Confeitaria no Google Maps"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. SITE FOOTER (DARK) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo-white.svg" alt="Franceska Venzon">
+          <p>
+            Confeitaria clássica autoral, doces finos e cafés especiais selecionados por barista no bairro Cruzeiro em Caxias do Sul.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#cardapio">Cardápio</a>
+          <a href="#historia">A Chef</a>
+          <a href="#depoimentos">Avaliações</a>
+          <a href="#localizacao">Endereço</a>
+          <a href="proposta.html" style="color:#D4AF37;">Proposta Comercial Onira.fly</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Franceska Venzon Confeitaria. Todos os direitos reservados. CNPJ 33.585.807/0001-08.</span>
+        <span class="onira-credit">Tecnologia por <strong>Onira Labs</strong> • Canal Próprio Onira.fly</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       CART DRAWER & CHECKOUT ENGINE (DARK #111115 — PADRÃO MASTER CLAEM)
+       ========================================================================== -->
+  <div class="cart-overlay" id="cart-overlay" onclick="closeCartDrawer()"></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <div class="cart-header">
+      <div class="cart-header-title" id="cart-title">
+        <i data-lucide="shopping-bag" style="color:#D4AF37;"></i>
+        <span>Seu Pedido</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <button class="btn-continue-shopping" onclick="closeCartDrawer()">
+          <i data-lucide="arrow-left" style="width:14px;height:14px;"></i> Continuar Escolhendo
+        </button>
+        <button class="btn-cart-close" onclick="closeCartDrawer()" aria-label="Fechar Gaveta">
+          <i data-lucide="x" style="width:18px;height:18px;"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="cart-body">
+      <!-- Empty State -->
+      <div class="cart-empty-state" id="cart-empty-state">
+        <i data-lucide="shopping-bag" class="cart-empty-icon"></i>
+        <h4>Seu pedido está vazio</h4>
+        <p>Selecione suas fatias, sobremesas ou cafés no cardápio para começar.</p>
+        <button class="btn-primary" style="font-size:0.88rem;padding:10px 20px;" onclick="closeCartDrawer()">
+          Ver Vitrine
+        </button>
+      </div>
+
+      <!-- Items List -->
+      <div class="cart-items-container" id="cart-items-container" style="display:none;"></div>
+
+      <!-- Options & Fulfillment Form -->
+      <div class="cart-form-section" id="cart-form-section">
+        <span class="form-label-title">Como deseja receber?</span>
+        <div class="fulfillment-toggle">
+          <button type="button" class="fulfillment-btn active" id="btn-delivery" onclick="setFulfillment('delivery')">
+            <i data-lucide="bike" style="width:16px;height:16px;"></i> Tele-Entrega
+          </button>
+          <button type="button" class="fulfillment-btn" id="btn-pickup" onclick="setFulfillment('retirada')">
+            <i data-lucide="store" style="width:16px;height:16px;"></i> Retirar no Balcão
+          </button>
+        </div>
+
+        <!-- Bairro de Entrega -->
+        <div class="form-group" id="delivery-zone-group">
+          <label class="form-label-title" for="neighborhood-select">Bairro em Caxias do Sul</label>
+          <select id="neighborhood-select" class="form-select">
+            <!-- Populado via app.js -->
+          </select>
+        </div>
+
+        <!-- Endereço Completo -->
+        <div class="form-group" id="delivery-address-group">
+          <label class="form-label-title" for="customer-address">Endereço de Entrega (Rua, Nº e Apto)</label>
+          <input type="text" id="customer-address" class="form-input" placeholder="Ex: Rua das Flores, 120, Apto 302">
+        </div>
+
+        <!-- Nome do Cliente -->
+        <div class="form-group">
+          <label class="form-label-title" for="customer-name">Seu Nome Completo</label>
+          <input type="text" id="customer-name" class="form-input" placeholder="Ex: Ana Maria Silva">
+        </div>
+
+        <!-- Forma de Pagamento -->
+        <div class="form-group">
+          <span class="form-label-title">Forma de Pagamento Combinada</span>
+          <div class="payment-selector-grid">
+            <button type="button" class="pay-btn active" data-method="pix" onclick="setPayment('pix')">
+              <i data-lucide="qr-code" style="width:18px;height:18px;"></i>
+              <span>Pix</span>
+            </button>
+            <button type="button" class="pay-btn" data-method="cartao" onclick="setPayment('cartao')">
+              <i data-lucide="credit-card" style="width:18px;height:18px;"></i>
+              <span>Cartão</span>
+            </button>
+            <button type="button" class="pay-btn" data-method="dinheiro" onclick="setPayment('dinheiro')">
+              <i data-lucide="banknote" style="width:18px;height:18px;"></i>
+              <span>Dinheiro</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Observações -->
+        <div class="form-group">
+          <label class="form-label-title" for="order-notes">Observações do Pedido (Opcional)</label>
+          <input type="text" id="order-notes" class="form-input" placeholder="Ex: Se possível, embalar para presente.">
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Footer & Totals -->
+    <div class="cart-footer">
+      <div class="cart-totals-breakdown">
+        <div class="total-row">
+          <span>Subtotal dos Itens:</span>
+          <strong id="cart-subtotal-val" style="color:#FFFFFF;">R$ 0,00</strong>
+        </div>
+        <div class="total-row" id="delivery-fee-row">
+          <span>Taxa de Entrega:</span>
+          <strong id="delivery-fee-val" style="color:#FFFFFF;">R$ 8,00</strong>
+        </div>
+        <div class="total-row final">
+          <span>Total do Pedido:</span>
+          <strong class="total-value" id="cart-grand-total-val">R$ 0,00</strong>
+        </div>
+      </div>
+
+      <button class="btn-checkout-whatsapp" onclick="checkoutWhatsApp()">
+        <i data-lucide="send"></i> Enviar Pedido no WhatsApp da Loja
+      </button>
+
+      <div class="cart-tech-signature">
+        Tecnologia por <strong>Onira Labs</strong> • Sem intermediários
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       FLOATING PROPOSAL WIDGET (.onira-cta) — REGRA RETRÁTIL PERMANENTE
+       ========================================================================== -->
+  <a href="proposta.html" class="onira-cta" id="onira-cta" title="Ver proposta comercial elaborada para a Franceska Venzon Confeitaria">
+    <img src="assets/jeff-avatar.webp" alt="Jefferson Motta - Onira Labs" class="onira-cta-avatar">
+    <div class="onira-cta-text">
+      <span class="onira-cta-hook">Gostou do canal próprio?</span>
+      <span class="onira-cta-call">Ver proposta comercial oficial →</span>
+    </div>
+  </a>
+
+  <!-- ==========================================================================
+       FLOATING MOBILE ORDER BAR
+       ========================================================================== -->
+  <div class="cart-floating-bar" id="cart-floating-bar">
+    <div class="floating-bar-info">
+      <span class="floating-bar-count" id="float-cart-count">0 itens</span>
+      <span class="floating-bar-total" id="float-cart-total">R$ 0,00</span>
+    </div>
+    <button class="floating-bar-btn" onclick="openCartDrawer()">
+      <i data-lucide="shopping-bag"></i> Ver Pedido
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="app.js?v=20260903"></script>
+  <script>
+    // Registrar Service Worker para PWA e Cache-First
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(err => console.log('SW registration skipped:', err));
+      });
+    }
+  </script>
+</body>
+</html>
